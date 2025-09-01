@@ -1,0 +1,53 @@
+{
+    "index":{
+        "lead":"FRAP est le site portfolio de Florent Aupeix.",
+        "p1":"Je suis motion designer, titulaire d'un  <span class='highlight'>diplôme en motion design</span>  de MJM Design et d'un<span class='highlight'> diplôme en graphisme</span> de l'ESDAC (incluant un an d'apprentissage).",
+        "p2":"J'ai affiné mon regard chez ArtFx (photo, sculpture, peinture, dessin, cinéma/effets spéciaux) et mes compétences en 3D chez Objectif3D, et j'apporte deux ans d'études en informatique pour les workflows axés sur les pipelines.",
+        "p3":"Je suis passionné par le cinéma et les jeux vidéo. Je raconte des histoires claires et émouvantes.",
+        "p4":"Pour chaque projet, je me pose les questions suivantes : que doit ressentir le public, et quel est le moyen le plus direct de le lui montrer ? Je suis ouvert aux collaborations internationales, discutons-en.",
+        "Dune":"Bande-annonce Dune",
+        "Canette":"Canette Elevate",
+        "ElectroStim":"Electro Stimulation",
+        "Cubism":"Cubisme",
+        "Cartoon":"Espace cartoon"
+
+    
+    },
+
+
+
+
+  "about": {
+    "title": "FRAP — Florent Aupeix",
+    "lead": "Motion Designer & Title Designer. Je conçois des séquences claires et émotionnelles pour le cinéma, les séries, le jeu vidéo et les marques.",
+    "bio": "Formé en Motion Design (MJM) et en Design Graphique (ESDAC, avec une année d’alternance). Œil affûté à ArtFx (photo, sculpture, peinture, dessin, cinéma/VFX) et 3D renforcée à Objectif3D. J’apporte aussi deux années d’informatique, ce qui veut dire que je prends autant soin des pipelines, du versioning et des workflows reproductibles que des images."
+  },
+  "whatido": {
+    "title": "Ce que je fais",
+    "item1": "<span class='bold'>Title design & typographies animées</span> (génériques, intertitres, titrages)",
+    "item2": "<span class='bold'>Séquences 3D</span> et spots graphiques (styleframes → animatic → final)",
+    "item3": "<span class='bold'>Workflows hybrides</span> (C4D/Redshift ↔ After Effects) propres et disciplinés",
+    "item4": "<span class='bold'>Clarté éditoriale</span> : rythmer pour guider précisément l’émotion"
+  },
+  "how": {
+    "title": "Méthode",
+    "step1": "<span class='bold'>Questionner le besoin</span> : quel ressenti viser, et comment l’obtenir sans détour ?",
+    "step2": "<span class='bold'>Prouver vite</span> : styleframes + test de rythme, preuve par l’image.",
+    "step3": "<span class='bold'>Designer avec les contraintes</span> : GPU/VRAM, délais, rendu local vs ferme.",
+    "step4": "<span class='bold'>Rendre transmissible</span> : arborescences nettes, versions, livrables propres.",
+    "step5": "<span class='bold'>Travailler en non-destructif</span> : précomps, calques, nodes, tout reste éditable car les changements sont inévitables."
+  },
+  "tools": {
+    "title": "Outils",
+    "text": "Cinema 4D + Redshift, After Effects, Photoshop/Illustrator, X-Particles quand c’est pertinent. Versioning Git pour les assets, et préférence pour l’automatisation plutôt que le bricolage manuel."
+  },
+  "working": {
+    "title": "Travailler avec moi",
+    "item1": "<span class='bold'>Freelance / télétravail</span>, en français ou en anglais.",
+    "item2": "Collaboratif et direct : si quelque chose est faible, je le dis — et je le corrige.",
+    "item3": "Ouvert aux clients internationaux et aux co-directions avec des studios."
+  },
+  "cta": { "slogan": "Faisons quelque chose de net et percutant." },
+  "contact": { "label": "Contact :", "cta": "M’écrire" },
+  "download": { "label": "Portfolio 2D :", "portfolio": "📄 Télécharger le Portfolio 2D (156 Mo)" }
+}

@@ -1,0 +1,47 @@
+{
+    "index":{
+        "lead":"FRAP is the portfolio site of Florent Aupeix.",
+        "p1":"I'm a motion designer with a <span class='highlight'>Motion Design degree</span>  from MJM Design and a <span class='highlight'>Graphic Design diploma</span> from ESDAC (including a one-year apprenticeship).",
+        "p2":"I sharpened my eye at ArtFx (photo, sculpture, painting, drawing, film/VFX) and my 3D at Objectif3D, and I bring two years of computer science for pipeline-minded workflows.",
+        "p3":"I'm driven by cinema and video games—I tell clear, emotive stories.",
+        "p4":"On every brief I ask: what should the audience feel, and what's the most direct way to show it? Open to international collaborations—let's talk.",
+        "Dune":"Dune Trailer",
+        "Canette":"Elevate Can",
+        "ElectroStim":"ElectroStim",
+        "Cubism":"Cubism",
+        "Cartoon":"Cartoon Space"
+    },
+  "about": {
+    "title": "FRAP — Florent Aupeix",
+    "lead": "Motion Designer & Title Designer. I build clear, emotive sequences for film, series, games, and brands.",
+    "bio": "I’m trained in Motion Design (MJM) and Graphic Design (ESDAC, with a one-year apprenticeship). I sharpened my eye at ArtFx (photography, sculpture, painting, drawing, film/VFX) and my 3D at Objectif3D. I also bring two years of computer science, which means I care about pipelines, versioning, and reproducible workflows as much as I care about frames."
+  },
+  "whatido": {
+    "title": "What I do",
+    "item1": "<span class='bold'>Title design & typography in motion</span> (main titles, interstitials, lower-thirds)",
+    "item2": "<span class='bold'>3D-driven spots</span> and graphic sequences (styleframes → animatics → final)",
+    "item3": "<span class='bold'>Hybrid workflows</span> (Cinema 4D/Redshift ↔ After Effects) with clean comps and render discipline",
+    "item4": "<span class='bold'>Editorial clarity</span>: shaping beats so the audience knows exactly what to feel and when"
+  },
+  "how": {
+    "title": "How I work",
+    "step1": "<span class='bold'>Interrogate the brief</span> → What should the audience feel? What’s the simplest way to show it?",
+    "step2": "<span class='bold'>Prove it fast</span> → styleframes + a rough timing test. No mystery reels.",
+    "step3": "<span class='bold'>Design for constraints</span> → GPU/RAM, deadlines, local render vs. farm.",
+    "step4": "<span class='bold'>Name everything</span> → tidy project structures, version control, handoff-ready files.",
+    "step5": "<span class='bold'>Keep it non-destructive</span> → layers, precomps, node-based setups: everything stays editable, because change always comes."
+  },
+  "tools": {
+    "title": "Tools",
+    "text": "Cinema 4D + Redshift, After Effects, Photoshop/Illustrator, X-Particles when needed. Git-based versioning for assets, and a bias toward automation over manual fiddling."
+  },
+  "working": {
+    "title": "Working with me",
+    "item1": "<span class='bold'>Freelance / remote-friendly</span>, English or French.",
+    "item2": "I’m collaborative and direct. If something’s weak, I’ll say it—and fix it.",
+    "item3": "Open to international clients and co-direction with studios."
+  },
+  "cta": { "slogan": "Let’s make something sharp." },
+  "contact": { "label": "Contact:", "cta": "Email me" },
+  "download": { "label": "Portfolio 2D:", "portfolio": "📄 Download 2D Portfolio (156 MB)" }
+}

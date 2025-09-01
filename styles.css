@@ -16,6 +16,10 @@ p{
     font-family: var(--ff-base);
     font-weight: var(--fw-medium);
 }
+.bold{
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+}
 
 :root{
     --accent-color:#d4d4ff;
@@ -123,7 +127,7 @@ body {
   width: 20px;
   left: 3px;
   bottom: 3px;
-  background-color: var(--bg-dark-1);
+  background-color: var(--text-dark);
   transition: 0.4s;
   border-radius: 50%;
 }
@@ -190,6 +194,38 @@ input:checked + .slider::before {
     fill: currentColor;
     color: var(--text-dark);
 }
+.lang-switch {
+  display: inline-flex;
+  overflow: hidden;
+  font-family: inherit;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+.lang-btn {
+
+  padding: 0.5em 1.2em;
+  border: 1px solid var(--text-dark);
+  background: var(--bg-dark-1);
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.lang-btn:hover {
+  background: var(--text-dark);
+  color: #000;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background: var(--text-dark);      /* active background */
+  color: var(--bg-dark-1);           /* active text */
+  border-color: var(--bg-dark-1);
+}
+
+
 
 /* Décaler le contenu principal */
 .content {
@@ -304,17 +340,21 @@ scrollbar-width: none;
 }
 .foot_menu_mobile{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: auto;
   padding-top: 2rem;
-
+  width: 100%;
+  align-items: center;
 }
 .foot_menu_mobile .about{
   margin: 0;
   line-height: 1;
 }
-
-
+.foot_menu_mobile .lang-switch{
+  width: 100%;
+  justify-content: space-around;
+}
 
 /*=== showreel=== */
 #home{
@@ -719,4 +759,38 @@ scrollbar-width: none;
     font-weight: var(--fw-thin);
     font-size: 26px;
 
+}
+
+/*=== ABOUT ===*/
+.col2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col1{
+  width: 49%;
+}
+ul, ol{
+  font-weight: 300;
+}
+.center{
+  text-align: center;
+}
+.mail, .portfoliopdf{
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: var(--fw-bold);
+}
+.mail:hover, .portfoliopdf:hover{
+  background-color: var(--accent-color);
+  color: var(--text-dark-2);
+}
+@media (max-width: 639px) {
+  .col2{
+    display: flex;
+    flex-direction: column;
+  }
+  .col1{
+    width: auto;
+  }
 }
