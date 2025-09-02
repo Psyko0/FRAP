@@ -1,129 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <base href="./">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-<!-- Favicon standard -->
-<link rel="icon" type="image/png" href="./assets/favicon.png">
+    <base href="./" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon standard -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
 
-<!-- Pour iPhone/iPad -->
-<link rel="apple-touch-icon" href="./assets/favicon.png">
+    <!-- Pour iPhone/iPad -->
+    <link rel="apple-touch-icon" href="./assets/favicon.png" />
 
-<!-- Pour Windows tiles -->
-<meta name="msapplication-TileImage" content="./assets/favicon.png">
+    <!-- Pour Windows tiles -->
+    <meta name="msapplication-TileImage" content="./assets/favicon.png" />
+  </head>
 
-
-</head>
-
-
-
-<body>
+  <body>
     <div id="scrollbar-placeholder"></div>
     <div id="sidebar-placeholder"></div>
 
+    <div class="content">
+      <!-- ton contenu principal -->
+      <section id="home">
+        <p data-i18n="index.lead">
+          FRAP is the portfolio site of Florent Aupeix.
+        </p>
+        <br />
+        <p data-i18n="index.p1">
+          I'm a motion designer with a
+          <span class="bold">Motion Design degree</span> from MJM Design and a
+          <span class="bold">Graphic Design diploma</span> from ESDAC (including
+          a one-year apprenticeship).
+        </p>
 
+        <p data-i18n="index.p2">
+          I sharpened my eye at ArtFx (photo, sculpture, painting, drawing,
+          film/VFX) and my 3D at Objectif3D, and I bring two years of computer
+          science for pipeline-minded workflows.
+        </p>
+        <br />
+        <p data-i18n="index.p3">
+          I'm driven by cinema and video games—I tell clear, emotive stories.
+        </p>
 
-<div class="content">
-  <!-- ton contenu principal -->
-  <section id="home">
-    <p data-i18n="index.lead">FRAP is the portfolio site of Florent Aupeix.</p>
-<br>
-<p data-i18n="index.p1">I'm a motion designer with a <span class="bold">Motion Design degree</span>  from MJM Design and a <span class="bold">Graphic Design diploma</span> from ESDAC (including a one-year apprenticeship).</p>
-  
-<p data-i18n="index.p2">I sharpened my eye at ArtFx (photo, sculpture, painting, drawing, film/VFX) and my 3D at Objectif3D, and I bring two years of computer science for pipeline-minded workflows.</p>
-  <br>
-<p data-i18n="index.p3">I'm driven by cinema and video games—I tell clear, emotive stories.</p>
-  
-<p data-i18n="index.p4">On every brief I ask: what should the audience feel, and what's the most direct way to show it? Open to international collaborations—let's talk.
-</p>
-  </section>
+        <p data-i18n="index.p4">
+          On every brief I ask: what should the audience feel, and what's the
+          most direct way to show it? Open to international collaborations—let's
+          talk.
+        </p>
+      </section>
 
-<section id="showreel">
-    <div class="video-wrapper" data-autofs>
-  <iframe
-    src="https://player.vimeo.com/video/1109030524?&title=0&byline=0&portrait=0&badge=0&color=ffffff"
-    class="video-iframe"
-    width="100%"
-    height="auto"
-    frameborder="0"
-    allow="autoplay; fullscreen; picture-in-picture"
-    allowfullscreen
-    title="Showreel 2025">
-    </iframe>
-    <button class="tap-catcher" aria-label="Lire en plein écran"></button>
-</div>
-</section>
+      <section id="showreel">
+        <div class="video-wrapper" data-autofs>
+          <iframe
+            src="https://player.vimeo.com/video/1109030524?&title=0&byline=0&portrait=0&badge=0&color=ffffff"
+            class="video-iframe"
+            width="100%"
+            height="auto"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Showreel 2025"
+          >
+          </iframe>
+          <button class="tap-catcher" aria-label="Lire en plein écran"></button>
+        </div>
+      </section>
 
-<section class="gallery">
-    <div class="wrapper">
-        <a class="grid1 card" href="pages/Dune_trailer.html">
-            <div >
-                <p data-i18n="index.Dune">Dune Trailer</p>
-                <img src="./assets/Dune/Texte (00017).png" alt="">
+      <section class="gallery">
+        <div class="wrapper">
+          <a class="grid1 card" href="pages/Dune_trailer.html">
+            <div>
+              <p data-i18n="index.Dune">Dune Trailer</p>
+              <img src="./assets/Dune/Texte (00017).png" alt="" />
             </div>
-        </a>
-        <a class="grid2 card" href="pages/Elevate_can.html">
-            <div >
-                <p data-i18n="index.Canette">Elevate Can</p>
-                <img src="./assets/Elevate Can/VS--ElevateCan-0’02”.jpg" alt="">
+          </a>
+          <a class="grid2 card" href="pages/Elevate_can.html">
+            <div>
+              <p data-i18n="index.Canette">Elevate Can</p>
+              <img src="./assets/Elevate Can/VS--ElevateCan-0’02”.jpg" alt="" />
             </div>
-        </a>
-        <a class="grid3 card" href="pages/Electro_stim.html">
-            <div >
-                <p data-i18n="index.ElectroStim">ElectroStim</p>
-                <img src="./assets/Electro Stim/VS--ElectroStimulation-0’02”.jpg" alt="">   
+          </a>
+          <a class="grid3 card" href="pages/Electro_stim.html">
+            <div>
+              <p data-i18n="index.ElectroStim">ElectroStim</p>
+              <img
+                src="./assets/Electro Stim/VS--ElectroStimulation-0’02”.jpg"
+                alt=""
+              />
             </div>
-        </a>
-        <a class="grid4 card" href="pages/Cubism.html">
-            <div >
-                <p data-i18n="index.Cubism">Cubism</p>
-                <img src="./assets/Cubism/VS--Cubism-0’00”.jpg" alt="">
+          </a>
+          <a class="grid4 card" href="pages/Cubism.html">
+            <div>
+              <p data-i18n="index.Cubism">Cubism</p>
+              <img src="./assets/Cubism/VS--Cubism-0’00”.jpg" alt="" />
             </div>
-        </a>
-        <a class="grid5 card" href="pages/Cartoon_space.html">
-            <div >
-                <p data-i18n="index.Cartoon">Cartoon Space</p>
-                <img src="./assets/Cartoon space/VS--Moon-0’04”.jpg" alt="">
+          </a>
+          <a class="grid5 card" href="pages/Cartoon_space.html">
+            <div>
+              <p data-i18n="index.Cartoon">Cartoon Space</p>
+              <img src="./assets/Cartoon space/VS--Moon-0’04”.jpg" alt="" />
             </div>
-        </a>
+          </a>
+        </div>
+      </section>
     </div>
-</section>
 
-
-    
-</div>
-    
-<script src="../js/i18n.js" defer></script>
+    <script src="../js/i18n.js" defer></script>
     <!-- Menu Mobile-->
     <script defer src="js/script-mobile.js"></script>
-<script defer>
-  (async () => {
-    try {
-      const [sidebarHtml, scrollbarHtml] = await Promise.all([
-        fetch('partials/Menu_sidebar.html').then(r => r.text()),
-        fetch('partials/custom_scrollbar.html').then(r => r.text()),
-      ]);
-      document.getElementById('sidebar-placeholder').innerHTML = sidebarHtml;
-      document.getElementById('scrollbar-placeholder').innerHTML = scrollbarHtml;
+    <script defer>
+      (async () => {
+        try {
+          const [sidebarHtml, scrollbarHtml] = await Promise.all([
+            fetch("partials/Menu_sidebar.html").then((r) => r.text()),
+            fetch("partials/custom_scrollbar.html").then((r) => r.text()),
+          ]);
+          document.getElementById("sidebar-placeholder").innerHTML =
+            sidebarHtml;
+          document.getElementById("scrollbar-placeholder").innerHTML =
+            scrollbarHtml;
 
-      // Rebranche le switch thème sur le NOUVEAU DOM
-      window.__theme?.syncThemeToggle();
+          // Rebranche le switch thème sur le NOUVEAU DOM
+          window.__theme?.syncThemeToggle();
 
-      // Init menu mobile
-      window.initMobileMenu?.();
-      window.initCustomScrollbar?.();
-    } catch (e) {
-      console.error('Partial injection failed:', e);
-    }
-  })();
-</script>
+          // Init menu mobile
+          window.initMobileMenu?.();
+          window.initCustomScrollbar?.();
+        } catch (e) {
+          console.error("Partial injection failed:", e);
+        }
+      })();
+    </script>
 
-<script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

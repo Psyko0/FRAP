@@ -18,11 +18,17 @@
   }
 
   function getStoredLang() {
-    try { return localStorage.getItem(STORAGE_KEY); } catch (_) { return null; }
+    try {
+      return localStorage.getItem(STORAGE_KEY);
+    } catch (_) {
+      return null;
+    }
   }
 
   function storeLang(lang) {
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) {}
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (_) {}
   }
 
   // ⚠️ clé : construire l’URL des JSON **relatifs à la page en cours**
@@ -43,7 +49,6 @@
       const key = el.getAttribute("data-i18n");
       const val = get(dict, key);
       if (val != null) el.innerHTML = val;
-
     });
 
     // Attributs (ex: data-i18n-attr="title=meta.title,placeholder=search.hint")
@@ -58,7 +63,9 @@
   }
 
   function get(obj, path) {
-    return path.split(".").reduce((o, k) => (o && o[k] != null ? o[k] : null), obj);
+    return path
+      .split(".")
+      .reduce((o, k) => (o && o[k] != null ? o[k] : null), obj);
   }
 
   function setLangButtons(active) {
@@ -91,25 +98,29 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-  // 1) Event delegation : fonctionne même si les boutons arrivent plus tard
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest(".lang-btn");
-    if (!btn) return;
-    const lang = btn.dataset.lang;
-    if (!lang) return;
-    switchLang(lang);
+    // 1) Event delegation : fonctionne même si les boutons arrivent plus tard
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".lang-btn");
+      if (!btn) return;
+      const lang = btn.dataset.lang;
+      if (!lang) return;
+      switchLang(lang);
+    });
+
+    // 2) Détecte quand le menu (avec .lang-btn) est injecté et met à jour aria-pressed
+    const observer = new MutationObserver(() => {
+      const current =
+        getStoredLang() || getQueryLang() || getBrowserLang() || DEFAULT_LANG;
+      setLangButtons(current);
+    });
+    observer.observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+    });
+
+    // 3) Langue de départ : query > storage > navigateur > défaut
+    const start =
+      getQueryLang() || getStoredLang() || getBrowserLang() || DEFAULT_LANG;
+    switchLang(start);
   });
-
-  // 2) Détecte quand le menu (avec .lang-btn) est injecté et met à jour aria-pressed
-  const observer = new MutationObserver(() => {
-    const current = getStoredLang() || getQueryLang() || getBrowserLang() || DEFAULT_LANG;
-    setLangButtons(current);
-  });
-  observer.observe(document.documentElement, { childList: true, subtree: true });
-
-  // 3) Langue de départ : query > storage > navigateur > défaut
-  const start = getQueryLang() || getStoredLang() || getBrowserLang() || DEFAULT_LANG;
-  switchLang(start);
-});
-
 })();

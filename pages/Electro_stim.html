@@ -1,178 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <base href="../">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <base href="../" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- Favicon standard -->
-<link rel="icon" type="image/png" href="./assets/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Favicon standard -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
 
-<!-- Pour iPhone/iPad -->
-<link rel="apple-touch-icon" href="./assets/favicon.png">
+    <!-- Pour iPhone/iPad -->
+    <link rel="apple-touch-icon" href="./assets/favicon.png" />
 
-<!-- Pour Windows tiles -->
-<meta name="msapplication-TileImage" content="./assets/favicon.png">
+    <!-- Pour Windows tiles -->
+    <meta name="msapplication-TileImage" content="./assets/favicon.png" />
+  </head>
 
-</head>
-
-
-<body>
-  <div id="scrollbar-placeholder"></div>
+  <body>
+    <div id="scrollbar-placeholder"></div>
     <div id="sidebar-placeholder"></div>
     <div class="content">
-      <h1>Electro Stimulation</h1>        <div class="gallery-wrapper">
-          <!-- TOP COUNTER -->
-           <div class="topbar">
-            <div class="prev">Previous</div>
-            <div>/</div>
-           <div class="next">Next image</div>
+      <h1>Electro Stimulation</h1>
+      <div class="gallery-wrapper">
+        <!-- TOP COUNTER -->
+        <div class="topbar">
+          <div class="prev">Previous</div>
+          <div>/</div>
+          <div class="next">Next image</div>
+        </div>
 
-           </div>
-           
-  <!-- Main slider -->
-  <div class="swiper main-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’02”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’03”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’04”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’05”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’10”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’12”.jpg" /></div>
+        <!-- Main slider -->
+        <div class="swiper main-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’02”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’03”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’04”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’05”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’10”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’12”.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="swiper thumb-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’02”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’03”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’04”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’05”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’10”.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/Electro Stim/VS--ElectroStimulation-0’12”.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lightbox globale -->
+      <div id="lightbox" class="lightbox" hidden>
+        <img id="lightbox-img" src="" alt="fullscreen image" />
+      </div>
+
+      <section class="Video">
+        <div class="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/1111393218?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            class="video-iframe"
+            width="100%"
+            height="auto"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Showreel 2025"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <section class="credits">
+        <h4>credits</h4>
+        <p>Client: MJM Design</p>
+        <p>Director: Olivié Charbonneau</p>
+        <p>Design & Visual Research: Florent Aupeix</p>
+        <p>Storyboard Artist: Florent Aupeix</p>
+        <p>Lighter: Florent Aupeix</p>
+        <p>Animator / Compositor: Florent Aupeix</p>
+        <p>CG: Florent Aupeix</p>
+        <p>3D Artist: Florent Aupeix</p>
+        <p>Special Thanks to Valentin Saury</p>
+        <h4>December 2024</h4>
+      </section>
     </div>
-    
-    
 
-    
-  </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      // init thumbs (sans loop)
+      const thumbs = new Swiper(".thumb-slider", {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+      });
 
-  <!-- Thumbnails -->
-  <div class="swiper thumb-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’02”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’03”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’04”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’05”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’10”.jpg" /></div>
-      <div class="swiper-slide"><img src="assets/Electro Stim/VS--ElectroStimulation-0’12”.jpg" /></div>
-    </div>
-  </div>
+      // init main slider (avec loop)
+      const mainSlider = new Swiper(".main-slider", {
+        loop: true,
+        loopedSlides: 6,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+        thumbs: {
+          swiper: thumbs,
+        },
+      });
 
-</div>
-<!-- Lightbox globale -->
-<div id="lightbox" class="lightbox" hidden>
-  <img id="lightbox-img" src="" alt="fullscreen image">
-</div>
+      // required when combining loop + thumbs:
+      mainSlider.thumbs.swiper = thumbs;
+      mainSlider.thumbs.init();
+      mainSlider.thumbs.update();
 
+      // click on main image => next
+      document.querySelector(".main-slider").addEventListener("click", () => {
+        mainSlider.slideNext();
+      });
+    </script>
 
-
-<section class="Video">
-    <div class="video-wrapper">
-  <iframe
-    src="https://player.vimeo.com/video/1111393218?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-    class="video-iframe"
-    width="100%"
-    height="auto"
-    frameborder="0"
-    allow="autoplay; fullscreen; picture-in-picture"
-    allowfullscreen
-    title="Showreel 2025">
-    </iframe>
-</div>
-</section>
-
-<section class="credits">
-  <h4>credits</h4>
-  <p>Client: MJM Design</p>
-  <p>Director: Olivié Charbonneau</p>
-  <p>Design & Visual Research: Florent Aupeix</p>
-  <p>Storyboard Artist: Florent Aupeix</p>
-  <p>Lighter: Florent Aupeix</p>
-  <p>Animator / Compositor: Florent Aupeix</p>
-  <p>CG: Florent Aupeix</p>
-  <p>3D Artist: Florent Aupeix</p>
-  <p>Special Thanks to Valentin Saury</p>
-  <h4>December 2024</h4>
-</section>
-
-
-
-
-    </div>
-
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script>
-// init thumbs (sans loop)
-const thumbs = new Swiper(".thumb-slider", {
-  slidesPerView: 6,
-  spaceBetween: 10,
-  watchSlidesProgress: true
-});
-
-// init main slider (avec loop)
-const mainSlider = new Swiper(".main-slider", {
-  loop: true,
-  loopedSlides: 6,
-  slidesPerView: 1,
-  navigation: {
-    nextEl: ".next",
-    prevEl: ".prev"
-  },
-  thumbs: {
-    swiper: thumbs
-  }
-});
-
-// required when combining loop + thumbs:
-mainSlider.thumbs.swiper = thumbs;
-mainSlider.thumbs.init();
-mainSlider.thumbs.update();
-
-// click on main image => next
-document.querySelector(".main-slider").addEventListener("click", () => {
-  mainSlider.slideNext();
-});
-
-</script>
-
-
-
-
-
-    
-        <!-- Menu Mobile-->
+    <!-- Menu Mobile-->
     <script defer src="js/script-mobile.js"></script>
-<script defer>
-  (async () => {
-    try {
-      const [sidebarHtml, scrollbarHtml] = await Promise.all([
-        fetch('partials/Menu_sidebar.html').then(r => r.text()),
-        fetch('partials/custom_scrollbar.html').then(r => r.text()),
-      ]);
-      document.getElementById('sidebar-placeholder').innerHTML = sidebarHtml;
-      document.getElementById('scrollbar-placeholder').innerHTML = scrollbarHtml;
+    <script defer>
+      (async () => {
+        try {
+          const [sidebarHtml, scrollbarHtml] = await Promise.all([
+            fetch("partials/Menu_sidebar.html").then((r) => r.text()),
+            fetch("partials/custom_scrollbar.html").then((r) => r.text()),
+          ]);
+          document.getElementById("sidebar-placeholder").innerHTML =
+            sidebarHtml;
+          document.getElementById("scrollbar-placeholder").innerHTML =
+            scrollbarHtml;
 
-      // Rebranche le switch thème sur le NOUVEAU DOM
-      window.__theme?.syncThemeToggle();
+          // Rebranche le switch thème sur le NOUVEAU DOM
+          window.__theme?.syncThemeToggle();
 
-      // Init menu mobile
-      window.initMobileMenu?.();
-      window.initCustomScrollbar?.();
-    } catch (e) {
-      console.error('Partial injection failed:', e);
-    }
-  })();
-</script>
-<script src="./script.js"></script>
-</body>
+          // Init menu mobile
+          window.initMobileMenu?.();
+          window.initCustomScrollbar?.();
+        } catch (e) {
+          console.error("Partial injection failed:", e);
+        }
+      })();
+    </script>
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -1,21 +1,16 @@
 {
-    "index":{
-        "lead":"FRAP est le site portfolio de Florent Aupeix.",
-        "p1":"Je suis motion designer, titulaire d'un  <span class='bold'>diplôme en motion design</span>  de MJM Design et d'un<span class='bold'> diplôme en graphisme</span> de l'ESDAC (incluant un an d'apprentissage).",
-        "p2":"J'ai affiné mon regard chez ArtFx (photo, sculpture, peinture, dessin, cinéma/effets spéciaux) et mes compétences en 3D chez Objectif3D, et j'apporte deux ans d'études en informatique pour les workflows axés sur les pipelines.",
-        "p3":"Je suis passionné par le cinéma et les jeux vidéo. Je raconte des histoires claires et émouvantes.",
-        "p4":"Pour chaque projet, je me pose les questions suivantes : que doit ressentir le public, et quel est le moyen le plus direct de le lui montrer ? Je suis ouvert aux collaborations internationales, discutons-en.",
-        "Dune":"Bande-annonce Dune",
-        "Canette":"Canette Elevate",
-        "ElectroStim":"Electro Stimulation",
-        "Cubism":"Cubisme",
-        "Cartoon":"Espace cartoon"
-
-    
-    },
-
-
-
+  "index": {
+    "lead": "FRAP est le site portfolio de Florent Aupeix.",
+    "p1": "Je suis motion designer, titulaire d'un  <span class='bold'>diplôme en motion design</span>  de MJM Design et d'un<span class='bold'> diplôme en graphisme</span> de l'ESDAC (incluant un an d'apprentissage).",
+    "p2": "J'ai affiné mon regard chez ArtFx (photo, sculpture, peinture, dessin, cinéma/effets spéciaux) et mes compétences en 3D chez Objectif3D, et j'apporte deux ans d'études en informatique pour les workflows axés sur les pipelines.",
+    "p3": "Je suis passionné par le cinéma et les jeux vidéo. Je raconte des histoires claires et émouvantes.",
+    "p4": "Pour chaque projet, je me pose les questions suivantes : que doit ressentir le public, et quel est le moyen le plus direct de le lui montrer ? Je suis ouvert aux collaborations internationales, discutons-en.",
+    "Dune": "Bande-annonce Dune",
+    "Canette": "Canette Elevate",
+    "ElectroStim": "Electro Stimulation",
+    "Cubism": "Cubisme",
+    "Cartoon": "Espace cartoon"
+  },
 
   "about": {
     "title": "FRAP — Florent Aupeix",
@@ -49,5 +44,8 @@
   },
   "cta": { "slogan": "Faisons quelque chose de net et percutant." },
   "contact": { "label": "Contact :", "cta": "M’écrire" },
-  "download": { "label": "Portfolio 2D :", "portfolio": "📄 Télécharger le Portfolio 2D (156 Mo)" }
+  "download": {
+    "label": "Portfolio 2D :",
+    "portfolio": "📄 Télécharger le Portfolio 2D (156 Mo)"
+  }
 }
