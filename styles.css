@@ -1,5 +1,3 @@
-
-
 :root {
   --ff-base: "Noto sans JP", sans-serif;
   --fw-thin: 300;
@@ -7,23 +5,51 @@
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-black: 900;
+  --fs: 1.25rem;
+}
+body{
+  font-size: var(--fs);
 }
 p{
     font-family: var(--ff-base);
     font-weight: var(--fw-thin);
-    font-size: 1.125rem;
+    
 }
-.highlight{
-    font-family: var(--ff-base);
-    font-weight: var(--fw-medium);
+h1{
+    text-transform: uppercase;
+    font-size: calc(var(--fs,1.25rem) + 0.6rem);
+    font-weight: var(--fw-thin);
+    margin: auto;
 }
+h2{
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+    font-size: calc(var(--fs,1.25rem) + 0.4rem);
+    margin-top: 5rem;
+}
+h3{
+  font-weight: var(--fw-black);
+  font-size: calc(var(--fs,1.25rem) + 0.2rem);
+}
+
+h4{
+  font-weight: var(--fw-thin);
+  text-transform: uppercase;
+  font-size: calc(var(--fs,1.25rem) + 0.075rem);
+}
+
+ul, ol{
+  font-weight: var(--fw-thin);
+}
+
 .bold{
     font-family: var(--ff-base);
     font-weight: var(--fw-bold);
+    font-size: calc(var(--fs, 1.25rem) + 0.07rem);
 }
 
 :root{
-    --accent-color:#d4d4ff;
+    --accent-color:#d4d4ff;   
 }
 /* Palette DARK (base utilisée par tout le CSS) */
 :root{
@@ -219,7 +245,7 @@ input:checked + .slider::before {
 
 .lang-btn:hover {
   background: var(--text-dark);
-  color: #000;
+  color: var(--bg-dark-1);
 }
 
 .lang-btn[aria-pressed="true"] {
@@ -436,7 +462,6 @@ scrollbar-width: none;
     padding: 0;
 	z-index: 1;
     place-items: center;
-    font-size: clamp(10px, 4vw + 1rem, 15px);
     text-transform: uppercase;
     top: 50%;
     left: 50%;
@@ -749,26 +774,11 @@ scrollbar-width: none;
 .credits{
     color: var(--text-dark-2);
 }
-.credits h1{
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: var(--fw-thin);
-    margin-bottom: 2em;
-}
-.credits p{
-    font-weight: var(--fw-thin);
 
-}
-.credits h2{
-    font-weight: var(--fw-medium);
-    font-size: 1.2rem;
-    margin-top: 5em;
-}
 .title{
     text-transform: uppercase;
     font-weight: var(--fw-thin);
     font-size: 1.75rem;
-
 }
 
 /*=== ABOUT ===*/
@@ -780,9 +790,7 @@ scrollbar-width: none;
 .col1{
   width: 49%;
 }
-ul, ol{
-  font-weight: 300;
-}
+
 .center{
   text-align: center;
 }
