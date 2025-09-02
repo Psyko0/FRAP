@@ -11,6 +11,7 @@
 p{
     font-family: var(--ff-base);
     font-weight: var(--fw-thin);
+    font-size: 1.125rem;
 }
 .highlight{
     font-family: var(--ff-base);
@@ -31,7 +32,7 @@ p{
   --bg-dark-3:hsl(240 3 11);
   --text-dark:hsl(240 3 96);
   --text-dark-2:hsl(240 2 50);
-  --text-dark-muted:hsl(240 2 18);
+  --text-dark-muted:hsl(240 2 35);
 }
 
 /* Palette LIGHT (réservoir pour le basculement) */
@@ -41,8 +42,10 @@ p{
   --bg-light-3:hsl(240 2 86);
   --text-light:hsl(240 3 11);
   --text-light-2:hsl(240 2 50);
-  --text-light-muted:hsl(240 2 80);
+  --text-light-muted:hsl(240 2 65);
 }
+
+/* === CURSEUR ===*/
 
 
 /* Masquer la barre native (page) */
@@ -363,8 +366,9 @@ scrollbar-width: none;
 }
 
 /*=== showreel=== */
-#home{
-    color: var(--text-dark-2);
+#home p{
+    color: var(--text-dark);
+    font-weight: var(--fw-thin);
 }
 .highlight{
     color: var(--text-dark);
@@ -747,7 +751,7 @@ scrollbar-width: none;
 }
 .credits h1{
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: var(--fw-thin);
     margin-bottom: 2em;
 }
@@ -757,13 +761,13 @@ scrollbar-width: none;
 }
 .credits h2{
     font-weight: var(--fw-medium);
-    font-size: 15px;
+    font-size: 1.2rem;
     margin-top: 5em;
 }
 .title{
     text-transform: uppercase;
     font-weight: var(--fw-thin);
-    font-size: 26px;
+    font-size: 1.75rem;
 
 }
 
