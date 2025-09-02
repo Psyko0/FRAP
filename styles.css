@@ -225,6 +225,12 @@ input:checked + .slider::before {
   border-color: var(--bg-dark-1);
 }
 
+.menu_page.active,
+.about.active,
+.about a.active {
+  color: var(--text-dark);
+  font-weight: var(--fw-bold); /* optionnel */
+}
 
 
 /* Décaler le contenu principal */
