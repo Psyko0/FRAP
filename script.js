@@ -9,6 +9,7 @@
     ['--text-dark','--text-light'],
     ['--text-dark-2','--text-light-2'],
     ['--text-dark-muted','--text-light-muted'],
+    ['--accent-color-dark', '--accent-color-light']
   ];
   const read = n => getComputedStyle(root).getPropertyValue(n).trim();
   let DARK={}, LIGHT={};
@@ -315,24 +316,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 })();
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Ex: "/"  -> "index.html"
-  //     "/pages/Dune_trailer.html" -> "dune_trailer.html"
-  const currentFile = (() => {
-    const p = window.location.pathname.replace(/\/$/, "");
-    const last = p.split("/").pop();
-    return (last || "index.html").toLowerCase();
-  })();
-
-  // Sélectionne tous les liens des deux menus
-  document.querySelectorAll(".sidebar a, .mobile-menu a").forEach(a => {
-    // Résout l'href en URL absolue pour éviter les pièges de chemins relatifs
-    const url = new URL(a.getAttribute("href"), window.location.href);
-    const linkFile = (url.pathname.replace(/\/$/, "").split("/").pop() || "index.html").toLowerCase();
-
-    if (linkFile === currentFile) {
-      a.classList.add("active");
-    }
-  });
-});

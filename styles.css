@@ -49,7 +49,8 @@ ul, ol{
 }
 
 :root{
-    --accent-color:#d4d4ff;   
+    --accent-color-dark:#d4d4ff;   
+    --accent-color-light:#5f5f9e;
 }
 /* Palette DARK (base utilisée par tout le CSS) */
 :root{
@@ -216,9 +217,7 @@ input:checked + .slider::before {
     margin: 0.25rem 0;
 }
 
-.menu_page:hover {
-  background-color: var(--accent-color);
-}
+
 .logo-icon{
     fill: currentColor;
     color: var(--text-dark);
@@ -257,7 +256,7 @@ input:checked + .slider::before {
 .menu_page.active,
 .about.active,
 .about a.active {
-  color: var(--text-dark);
+  color: var(--accent-color-dark);
   font-weight: var(--fw-bold); /* optionnel */
 }
 
@@ -800,7 +799,6 @@ scrollbar-width: none;
   font-weight: var(--fw-bold);
 }
 .mail:hover, .portfoliopdf:hover{
-  background-color: var(--accent-color);
   color: var(--text-dark-2);
 }
 @media (max-width: 639px) {
@@ -811,4 +809,51 @@ scrollbar-width: none;
   .col1{
     width: auto;
   }
+}
+
+/* Vars (tu peux brancher sur tes couleurs) */
+:root {
+  --link-underline-color: var(--accent-color-dark);
+  --link-underline-thickness: 2px;
+  --link-underline-speed: 220ms;
+}
+
+/* Animation d’underline au hover/focus */
+a {
+  text-decoration: none;
+  background-image: linear-gradient(var(--link-underline-color), var(--link-underline-color));
+  background-repeat: no-repeat;
+  background-size: 0% var(--link-underline-thickness);
+  background-position: 0 100%;
+  transition: background-size var(--link-underline-speed) ease;
+}
+
+/* Hover + focus clavier */
+a:hover,
+a:focus-visible {
+  background-size: 100% var(--link-underline-thickness);
+}
+
+/* Lien actif sans soulignement animé */
+a.active,
+a[aria-current="page"] {
+  background-image: none !important;
+  text-decoration: none !important;
+}
+
+/* Accessibilité : anneau focus (optionnel mais recommandé) */
+a:focus-visible {
+  outline: 2px dashed currentColor;
+  outline-offset: 2px;
+}
+
+/* Respecte les préférences de mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+  a { transition: none; }
+}
+
+/* Opt-out si besoin (logo, icônes…) */
+a.no-underline {
+  background-image: none !important;
+  text-decoration: none !important;
 }
