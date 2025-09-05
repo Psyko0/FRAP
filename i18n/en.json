@@ -1,10 +1,8 @@
 {
   "index": {
-    "lead": "FRAP is the portfolio site of Florent Aupeix.",
-    "p1": "I'm a motion designer with a <span class='bold'>Motion Design degree</span>  from MJM Design and a <span class='bold'>Graphic Design diploma</span> from ESDAC (including a one-year apprenticeship).",
-    "p2": "I sharpened my eye at ArtFx (photo, sculpture, painting, drawing, film/VFX) and my 3D at Objectif3D, and I bring two years of computer science for pipeline-minded workflows.",
-    "p3": "I'm driven by cinema and video games—I tell clear, emotive stories.",
-    "p4": "On every brief I ask: what should the audience feel, and what's the most direct way to show it? Open to international collaborations—let's talk.",
+    "lead": "<span class='italic'>Motion Designer</span> &amp; <span class='bold'>Title Designer</span>",
+    "p1": "I build moving images that are <span class='bold'>sharp</span> and <span class='italic'>emotive</span>. My eye is shaped as much by cinema as by design schools: Villeneuve’s precise <span class='bold'>composition</span>, Burton’s playful <span class='bold'>madness</span>, Nolan’s <span class='bold'>epic scale</span>, and Tarantino’s <span class='bold'>razor-edged rhythm</span>.",
+    "p2": "For me, motion design is about <span class='bold'>rhythm</span>: shaping beats so the audience knows exactly what to <span class='bold'>feel</span> and when. Every project starts with the same question: <span class='italic'>what should the audience feel—and what’s the most direct way to show it?</span>",
     "Dune": "Dune Trailer",
     "Canette": "Elevate Can",
     "ElectroStim": "ElectroStim",
@@ -12,44 +10,54 @@
     "Cartoon": "Cartoon Space"
   },
   "about": {
-    "title": "FRAP — Florent Aupeix",
-    "lead": "Motion Designer & Title Designer. I build clear, emotive sequences for film, series, games, and brands.",
-    "bio": "I’m trained in Motion Design (MJM) and Graphic Design (ESDAC, with a one-year apprenticeship). I sharpened my eye at ArtFx (photography, sculpture, painting, drawing, film/VFX) and my 3D at Objectif3D. I also bring two years of computer science, which means I care about pipelines, versioning, and reproducible workflows as much as I care about frames."
-  },
-  "whatido": {
-    "title": "What I do",
-    "item1": "<span class='bold'>Title design & typography in motion</span> (main titles, interstitials, lower-thirds)",
-    "item2": "<span class='bold'>3D-driven spots</span> and graphic sequences (styleframes → animatics → final)",
-    "item3": "<span class='bold'>Hybrid workflows</span> (Cinema 4D/Redshift ↔ After Effects) with clean comps and render discipline",
-    "item4": "<span class='bold'>Editorial clarity</span>: shaping beats so the audience knows exactly what to feel and when"
-  },
-  "how": {
-    "title": "How I work",
-    "step1": "<span class='bold'>Interrogate the brief</span> → What should the audience feel? What’s the simplest way to show it?",
-    "step2": "<span class='bold'>Prove it fast</span> → styleframes + a rough timing test. No mystery reels.",
-    "step3": "<span class='bold'>Design for constraints</span> → GPU/RAM, deadlines, local render vs. farm.",
-    "step4": "<span class='bold'>Name everything</span> → tidy project structures, version control, handoff-ready files.",
-    "step5": "<span class='bold'>Keep it non-destructive</span> → layers, precomps, node-based setups: everything stays editable, because change always comes."
-  },
-  "tools": {
-    "title": "Tools",
-    "text": "Cinema 4D + Redshift, After Effects, Photoshop/Illustrator, X-Particles when needed. Git-based versioning for assets, and a bias toward automation over manual fiddling."
-  },
-  "working": {
-    "title": "Working with me",
-    "item1": "<span class='bold'>Freelance / remote-friendly</span>, English or French.",
-    "item2": "I’m collaborative and direct. If something’s weak, I’ll say it—and fix it.",
-    "item3": "Open to international clients and co-direction with studios."
-  },
-  "cta": {
-    "slogan": "Let’s make something sharp."
-  },
-  "contact": {
-    "label": "Contact:",
-    "cta": "Email me"
-  },
-  "download": {
-    "label": "Portfolio 2D:",
-    "portfolio": "📄 Download 2D Portfolio (156 MB)"
+    "lead": "<span class='bold'>Motion Designer</span> &amp; <span class='bold'>Title Designer</span>. I design sequences that are <span class='bold'>clear</span> and <span class='bold'>emotive</span> for film, series, games, and brands.",
+    "background": "Background",
+    "bio": "At ESDAC I built strong foundations in Graphic Design, focusing on <span class='bold'>color</span> and <span class='bold'>observational drawing</span>, thanks to inspiring teachers who shaped the way I still see and build images today. During my apprenticeship at France Sport, I learned to adapt quickly to a professional environment, proving <span class='bold'>reliable</span> and <span class='bold'>effective</span> in a fast-moving team. At ArtFx I sharpened my eye across photography, sculpture, painting, drawing, and film/VFX. Working on many group projects taught me to keep workflows <span class='bold'>clean</span>, <span class='bold'>readable</span>, and <span class='bold'>handoff-ready</span>. At Objectif3D I developed my 3D skills and studied <span class='bold'>semiology</span>, learning how images, symbols, and composition guide meaning. I also studied computer science for two years, which gave me a strong sense of <span class='bold'>logic</span> and <span class='bold'>discipline</span> in structuring projects. Finally, at MJM I brought all of this together in Motion Design — applying everything I had learned — and graduated <span class='bold'>with honors</span>.",
+    "whatido": {
+      "title": "What I do",
+      "item1": "Title design &amp; animated typography (main titles, interstitials, on-air graphics)",
+      "item2": "3D-driven spots and graphic sequences (from styleframes to animatics to final renders)",
+      "item3": "Hybrid workflows (Cinema 4D/Redshift ↔ After Effects) with <span class='bold'>clean, disciplined comps</span>",
+      "item4": "Editorial clarity: shaping beats so the audience always knows what to <span class='bold'>feel</span> and when"
+    },
+    "how": {
+      "title": "How I work",
+      "step1": "Question the brief → <span class='italic'>what should the audience feel?",
+      "step2": "Prove it fast → styleframes and timing tests, no mystery reels.",
+      "step3": "Design for constraints → GPU/RAM, deadlines, local vs. farm render.",
+      "step4": "Name and structure everything → tidy files, <span class='bold'>handoff-ready projects</span>.",
+      "step5": "Keep it <span class='bold'>non-destructive</span> → layers, precomps, nodes: always editable, because change will come."
+    },
+    "tools": {
+      "title": "Tools",
+      "text": "Cinema 4D + Redshift, After Effects, Photoshop, Illustrator, X-Particles when needed. Git-based versioning for assets, and a bias toward <span class='bold'>automation</span> over manual tweaking."
+    },
+    "influence": {
+      "title": "Influences",
+      "p1": "Cinema is my biggest teacher. Denis Villeneuve inspires me for his <span class='bold'>rhythm</span>, <span class='bold'>storytelling</span>, and <span class='bold'>composition</span>. <span class='italic'>Dune: Part Two</span> was such a reference for me that I even made a project around it during my studies — its sense of scale and control of pacing are masterful. <span class='italic'>Blade Runner 2049</span> speaks to my love of cyberpunk, with immaculate visuals and a story that flows like music. Villeneuve is a genius of cinematography — every film he releases seems to claim the Oscar for it.",
+      "p2": "Tim Burton shaped my taste for <span class='bold'>playful madness</span>. <span class='italic'>Beetlejuice</span> (both 1 and 2) with its delirious mix of animatronics and stop motion, and <span class='italic'>Alice in Wonderland</span> with its sheer fun, show his joy of creation. Yet he can also break your heart, as with <span class='italic'>Edward Scissorhands</span>. He is a master of both humor and storytelling.",
+      "p3": "Christopher Nolan is my reference for <span class='bold'>epic tension</span>. <span class='italic'>Dunkirk</span> is my favorite: the sound design and relentless pacing make you feel trapped inside the atrocity of war. With <span class='italic'>The Dark Knight</span>, he mixes suspense, tension, and even humor at the highest level — the Joker remains unforgettable.",
+      "p4": "Quentin Tarantino is the undisputed master of <span class='bold'>absurd carnage</span>. <span class='italic'>Pulp Fiction</span>, <span class='italic'>Kill Bill</span>, <span class='italic'>Inglourious Basterds</span>, <span class='italic'>Once Upon a Time in Hollywood</span> — each shows his talent for <span class='bold'>rhythm</span>, dialogue, and violence turned into spectacle.",
+      "p5": "Video games taught me just as much. <span class='italic'>Cyberpunk 2077</span> for its <span class='bold'>storytelling</span> and <span class='bold'>rhythm</span>, <span class='italic'>Journey</span> for its <span class='bold'>visual composition</span> and purity, and <span class='italic'>Gris</span> for its <span class='bold'>color</span>, <span class='bold'>rhythm</span>, <span class='bold'>immersion</span>, and delicate storytelling. Both <span class='italic'>Cyberpunk 2077</span> and <span class='italic'>Gris</span> even made me cry — proof that when rhythm, image, and narrative align perfectly, motion can reach straight into emotion.",
+      "p6": "Music is my <span class='bold'>metronome</span>: from orchestral weight to electronic textures, it dictates the cuts and crescendos in my work."
+    },
+    "working": {
+      "title": "Working with me",
+      "text": "Those who worked with me — teachers, mentors, and companies — have praised my <span class='bold'>adaptability</span>, <span class='bold'>professionalism</span>, and <span class='bold'>motivation</span>. I’m <span class='bold'>collaborative</span> and <span class='bold'>direct</span>: if something’s weak, I’ll say it — and fix it. Freelance and remote-friendly, in English or French. Open to international clients and co-direction with studios."
+    },
+    "citations": {
+      "title": "Testimonials",
+      "cit1": "<span class='italic'>“Florent quickly adapted to our specific environment and proved an efficient, <span class='bold'>motivated</span> team member.”</span>",
+      "a1": "France Sport",
+      "cit2": "<span class='italic'>“A student eager to learn and <span class='bold'>proactive</span> in class, rare qualities combined with <span class='bold'>professionalism</span>.”</span>",
+      "a2": "Andrés Barriga, Motion Design Teacher, ESDAC",
+      "cit3": "<span class='italic'>“<span class='bold'>Motivated</span>, punctual and <span class='bold'>reliable</span>, Florent went beyond the tasks we asked and brought real <span class='bold'>value</span> to our projects.”</span>",
+      "a3": "Hagen Bauer"
+    },
+    "contact": {
+      "title": "Let’s make something sharp",
+      "label": "Contact:",
+      "pdf": "Portfolio 2D :"
+    }
   }
 }

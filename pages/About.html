@@ -1,166 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <base href="../">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<link rel="prefetch" href="partials/Menu_sidebar.html">
-<link rel="prefetch" href="partials/custom_scrollbar.html">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- Favicon standard -->
-<link rel="icon" type="image/png" href="./assets/favicon.png">
+    <base href="../" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="prefetch" href="partials/Menu_sidebar.html" />
+    <link rel="prefetch" href="partials/custom_scrollbar.html" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Favicon standard -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
 
-<!-- Pour iPhone/iPad -->
-<link rel="apple-touch-icon" href="./assets/favicon.png">
+    <!-- Pour iPhone/iPad -->
+    <link rel="apple-touch-icon" href="./assets/favicon.png" />
 
-<!-- Pour Windows tiles -->
-<meta name="msapplication-TileImage" content="./assets/favicon.png">
+    <!-- Pour Windows tiles -->
+    <meta name="msapplication-TileImage" content="./assets/favicon.png" />
+  </head>
 
-</head>
-
-
-<body>
-  <div id="scrollbar-placeholder"></div>
+  <body>
+    <div id="scrollbar-placeholder"></div>
     <div id="sidebar-placeholder"></div>
     <div class="content">
+      <h1>FRAP — Florent Aupeix</h1>
+      <p data-i18n="about.lead">
+        <span class="bold">Motion Designer</span> &amp;
+        <span class="bold">Title Designer</span>. I design sequences that are
+        <span class="bold">clear</span> and
+        <span class="bold">emotive</span> for film, series, games, and brands.
+      </p>
+      <h2 data-i18n="about.background">Background</h2>
+      <p data-i18n="about.bio">
+        At ESDAC I built strong foundations in Graphic Design, focusing on
+        <span class="bold">color</span> and
+        <span class="bold">observational drawing</span>, thanks to inspiring
+        teachers who shaped the way I still see and build images today. During
+        my apprenticeship at France Sport, I learned to adapt quickly to a
+        professional environment, proving <span class="bold">reliable</span> and
+        <span class="bold">effective</span> in a fast-moving team. At ArtFx I
+        sharpened my eye across photography, sculpture, painting, drawing, and
+        film/VFX. Working on many group projects taught me to keep workflows
+        <span class="bold">clean</span>, <span class="bold">readable</span>, and
+        <span class="bold">handoff-ready</span>. At Objectif3D I developed my 3D
+        skills and studied <span class="bold">semiology</span>, learning how
+        images, symbols, and composition guide meaning. I also studied computer
+        science for two years, which gave me a strong sense of
+        <span class="bold">logic</span> and
+        <span class="bold">discipline</span> in structuring projects. Finally,
+        at MJM I brought all of this together in Motion Design — applying
+        everything I had learned — and graduated
+        <span class="bold">with honors</span>.
+      </p>
 
-  <h1>FRAP — Florent Aupeix</h1>
-  <p data-i18n="about.lead">
-    Motion Designer & Title Designer. I build clear, emotive sequences for film, series, games, and brands.
-  </p>
+      <div class="col2">
+        <div class="col1">
+          <h2 data-i18n="about.whatido.title">What I do</h2>
+          <ul>
+            <li data-i18n="about.whatido.item1">
+              <span class="bold">Title design & typography in motion</span>
+              (main titles, interstitials, lower-thirds)
+            </li>
+            <li data-i18n="about.whatido.item2">
+              <span class="bold">3D-driven spots</span> and graphic sequences
+              (styleframes → animatics → final)
+            </li>
+            <li data-i18n="about.whatido.item3">
+              <span class="bold">Hybrid workflows</span> (Cinema 4D/Redshift ↔
+              After Effects) with clean comps and render discipline
+            </li>
+            <li data-i18n="about.whatido.item4">
+              <span class="bold">Editorial clarity</span>: shaping beats so the
+              audience knows exactly what to feel and when
+            </li>
+          </ul>
+        </div>
 
-  <p data-i18n="about.bio">
-    I’m trained in Motion Design (MJM) and Graphic Design (ESDAC, with a one-year apprenticeship). 
-    I sharpened my eye at ArtFx (photography, sculpture, painting, drawing, film/VFX) and my 3D at Objectif3D. 
-    I also bring two years of computer science, which means I care about pipelines, versioning, and reproducible workflows 
-    as much as I care about frames.
-  </p>
+        <div class="col1">
+          <h2 data-i18n="about.how.title">How I work</h2>
+          <ol>
+            <li data-i18n="about.how.step1">
+              <span class="bold">Interrogate the brief</span> → What should the
+              audience feel? What’s the simplest way to show it?
+            </li>
+            <li data-i18n="about.how.step2">
+              <span class="bold">Prove it fast</span> → styleframes + a rough
+              timing test. No mystery reels.
+            </li>
+            <li data-i18n="about.how.step3">
+              <span class="bold">Design for constraints</span> → GPU/RAM,
+              deadlines, local render vs. farm.
+            </li>
+            <li data-i18n="about.how.step4">
+              <span class="bold">Name everything</span> → tidy project
+              structures, version control, handoff-ready files.
+            </li>
+            <li data-i18n="about.how.step5">
+              <span class="bold">Keep it non-destructive</span> → layers,
+              precomps, node-based setups: everything stays editable, because
+              change always comes.
+            </li>
+          </ol>
+        </div>
+      </div>
 
-  <div class="col2">
+      <div class="center">
+        <h2 data-i18n="about.tools.title">Tools</h2>
+        <p data-i18n="about.tools.text">
+          Cinema 4D + Redshift, After Effects, Photoshop/Illustrator,
+          X-Particles when needed. Git-based versioning for assets, and a bias
+          toward automation over manual fiddling.
+        </p>
+      </div>
+      <h2 data-i18n="about.influence.title">Influences</h2>
+      <p data-i18n="about.influence.p1">d</p>
+      <p data-i18n="about.influence.p2">d</p>
+      <p data-i18n="about.influence.p3">d</p>
+      <p data-i18n="about.influence.p4">d</p>
+      <p data-i18n="about.influence.p5">d</p>
+      <p data-i18n="about.influence.p6">d</p>
 
-    <div class="col1">
-      <h2 data-i18n="whatido.title">What I do</h2>
-      <ul>
-        <li data-i18n="whatido.item1">
-          <span class="bold">Title design & typography in motion</span> (main titles, interstitials, lower-thirds)
-        </li>
-        <li data-i18n="whatido.item2">
-          <span class="bold">3D-driven spots</span> and graphic sequences (styleframes → animatics → final)
-        </li>
-        <li data-i18n="whatido.item3">
-          <span class="bold">Hybrid workflows</span> (Cinema 4D/Redshift ↔ After Effects) with clean comps and render discipline
-        </li>
-        <li data-i18n="whatido.item4">
-          <span class="bold">Editorial clarity</span>: shaping beats so the audience knows exactly what to feel and when
-        </li>
-      </ul>
+      <h2 data-i18n="about.working.title">Working with me</h2>
+      <p data-i18n="about.working.text">d</p>
+      <section class="citations">
+        <h2 data-i18n="about.citations.title">Testimonials</h2>
+        <div class="col3">
+          <div>
+            <div data-i18n="about.citations.cit1">d</div>
+            <div>&mdash;</div>
+            <div data-i18n="about.citations.a1">d</div>
+          </div>
+          <div>
+            <div data-i18n="about.citations.cit2">d</div>
+            <div>&mdash;</div>
+            <div data-i18n="about.citations.a2">d</div>
+          </div>
+          <div>
+            <div data-i18n="about.citations.cit3">d</div>
+            <div>&mdash;</div>
+            <div data-i18n="about.citations.a3">d</div>
+          </div>
+        </div>
+      </section>
+
+      <h3 data-i18n="about.contact.title">Let’s make something sharp.</h3>
+
+      <p>
+        <span data-i18n="about.contact.label">Contact:</span>
+        <a id="email-link" class="mail" data-i18n-attr="text=contact.cta"
+          >Me contacter</a
+        >
+        —
+        <span data-i18n="about.contact.pdf">Portfolio 2D:</span>
+        <a
+          class="portfoliopdf"
+          href="https://drive.google.com/uc?export=download&id=1-7GlTE-r1ixU7vXPH6kJTaxVlywtsWDh"
+          target="_blank"
+          rel="noopener"
+          >frap.design</a
+        >
+      </p>
     </div>
-
-    <div class="col1">
-      <h2 data-i18n="how.title">How I work</h2>
-      <ol>
-        <li data-i18n="how.step1">
-          <span class="bold">Interrogate the brief</span> → What should the audience feel? What’s the simplest way to show it?
-        </li>
-        <li data-i18n="how.step2">
-          <span class="bold">Prove it fast</span> → styleframes + a rough timing test. No mystery reels.
-        </li>
-        <li data-i18n="how.step3">
-          <span class="bold">Design for constraints</span> → GPU/RAM, deadlines, local render vs. farm.
-        </li>
-        <li data-i18n="how.step4">
-          <span class="bold">Name everything</span> → tidy project structures, version control, handoff-ready files.
-        </li>
-        <li data-i18n="how.step5">
-          <span class="bold">Keep it non-destructive</span> → layers, precomps, node-based setups: everything stays editable, because change always comes.
-        </li>
-      </ol>
-    </div>
-
-  </div>
-
-  <div class="center">
-    <h2 data-i18n="tools.title">Tools</h2>
-    <p data-i18n="tools.text">
-      Cinema 4D + Redshift, After Effects, Photoshop/Illustrator, X-Particles when needed. 
-      Git-based versioning for assets, and a bias toward automation over manual fiddling.
-    </p>
-  </div>
-
-  <h2 data-i18n="working.title">Working with me</h2>
-  <ul>
-    <li data-i18n="working.item1">
-      <span class="bold">Freelance / remote-friendly</span>, English or French.
-    </li>
-    <li data-i18n="working.item2">
-      I’m collaborative and direct. If something’s weak, I’ll say it—and fix it.
-    </li>
-    <li data-i18n="working.item3">
-      Open to international clients and co-direction with studios.
-    </li>
-  </ul>
-
-  <h3 data-i18n="cta.slogan">Let’s make something sharp.</h3>
-
-  <p>
-    <span data-i18n="contact.label">Contact:</span> 
-    <a id="email-link" class="mail" data-i18n-attr="text=contact.cta">Me contacter</a> — 
-    <span data-i18n="download.label">Portfolio 2D:</span> 
-    <a class="portfoliopdf" href="https://drive.google.com/uc?export=download&id=1-7GlTE-r1ixU7vXPH6kJTaxVlywtsWDh" target="_blank" rel="noopener">frap.design</a>
-  </p>
-
-</div>
-
-
-
-
-
-
-
-
 
     <script src="../js/i18n.js" defer></script>
     <script>
-  const reversed = "ngised.parf@tcatnoc"; // "contact@frap.design" écrit à l’envers
-  const email = reversed.split("").reverse().join("");
-  const link = document.getElementById("email-link");
+      const reversed = "ngised.parf@tcatnoc"; // "contact@frap.design" écrit à l’envers
+      const email = reversed.split("").reverse().join("");
+      const link = document.getElementById("email-link");
 
-  link.href = "mailto:" + email;
-  link.textContent = email;
-</script>
-        <!-- Menu Mobile-->
+      link.href = "mailto:" + email;
+      link.textContent = email;
+    </script>
+    <!-- Menu Mobile-->
     <script defer src="js/script-mobile.js"></script>
-<script defer>
-  (async () => {
-    try {
-      const [sidebarHtml, scrollbarHtml] = await Promise.all([
-        fetch('partials/Menu_sidebar.html').then(r => r.text()),
-        fetch('partials/custom_scrollbar.html').then(r => r.text()),
-      ]);
-      document.getElementById('sidebar-placeholder').innerHTML = sidebarHtml;
-      document.getElementById('scrollbar-placeholder').innerHTML = scrollbarHtml;
+    <script defer>
+      (async () => {
+        try {
+          const [sidebarHtml, scrollbarHtml] = await Promise.all([
+            fetch("partials/Menu_sidebar.html").then((r) => r.text()),
+            fetch("partials/custom_scrollbar.html").then((r) => r.text()),
+          ]);
+          document.getElementById("sidebar-placeholder").innerHTML =
+            sidebarHtml;
+          document.getElementById("scrollbar-placeholder").innerHTML =
+            scrollbarHtml;
 
-      // Rebranche le switch thème sur le NOUVEAU DOM
-      window.__theme?.syncThemeToggle();
+          // Rebranche le switch thème sur le NOUVEAU DOM
+          window.__theme?.syncThemeToggle();
 
-      // Init menu mobile
-      window.initMobileMenu?.();
-      window.initCustomScrollbar?.();
-    } catch (e) {
-      console.error('Partial injection failed:', e);
-    }
-  })();
-</script>
-<script defer src="js/menu_sidebar.js"></script>
-<script src="./script.js"></script>
-</body>
+          // Init menu mobile
+          window.initMobileMenu?.();
+          window.initCustomScrollbar?.();
+        } catch (e) {
+          console.error("Partial injection failed:", e);
+        }
+      })();
+    </script>
+    <script defer src="js/menu_sidebar.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
