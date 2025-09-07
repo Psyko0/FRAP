@@ -12,8 +12,14 @@
 
   "about": {
     "lead": "<span class='bold'>Motion Designer</span> &amp; <span class='bold'>Title Designer</span>. Je conçois des séquences <span class='bold'>claires</span> et <span class='bold'>émotives</span> pour le cinéma, les séries, le jeu vidéo et les marques.",
-    "background": "Parcours",
-    "bio": "À l'ESDAC j’ai acquis de solides bases en design graphique, en travaillant surtout la <span class='bold'>couleur</span> et le <span class='bold'>dessin d’observation</span>, grâce à d’excellents professeurs. Mon année en alternance chez France Sport m’a appris à m’adapter rapidement à un environnement professionnel et à être <span class='bold'>efficace</span> dans une équipe en mouvement. À ArtFx j’ai affûté mon regard à travers la photo, la sculpture, la peinture, le dessin et le cinéma/VFX. Les nombreux projets de groupe m’ont appris à garder des workflows <span class='bold'>clairs</span>, <span class='bold'>lisibles</span> et <span class='bold'>transmissibles</span>. À Objectif3D j’ai approfondi mes compétences en 3D et étudié la <span class='bold'>sémiologie</span>, c’est-à-dire comment les images, les symboles et la composition guident le sens. J’ai également fait deux ans d’informatique, qui m’ont donné une forte <span class='bold'>logique</span> et une vraie <span class='bold'>rigueur</span> dans la structuration des projets. Enfin, à MJM j’ai réuni tout cela dans le Motion Design — en appliquant l’ensemble de mes acquis — et j’ai obtenu mon diplôme <span class='bold'>avec mention</span>.",
+    "background": {
+      "title": "Parcours",
+      "bio1": "À l'ESDAC j’ai acquis de solides bases en design graphique, en travaillant surtout la <span class='bold'>couleur</span> et le <span class='bold'>dessin d’observation</span>, grâce à d’excellents professeurs. Mon année en alternance chez France Sport m’a appris à m’adapter rapidement à un environnement professionnel et à être <span class='bold'>efficace</span> dans une équipe en mouvement.",
+      "bio2": "À ArtFx j’ai affûté mon regard à travers la photo, la sculpture, la peinture, le dessin et le cinéma/VFX. Les nombreux projets de groupe m’ont appris à garder des workflows <span class='bold'>clairs</span>, <span class='bold'>lisibles</span> et <span class='bold'>transmissibles</span>.",
+      "bio3": "À Objectif3D j’ai approfondi mes compétences en 3D et étudié la <span class='bold'>sémiologie</span>, c’est-à-dire comment les images, les symboles et la composition guident le sens.",
+      "bio4": "J’ai également fait deux ans d’informatique, qui m’ont donné une forte <span class='bold'>logique</span> et une vraie <span class='bold'>rigueur</span> dans la structuration des projets.",
+      "bio5": "Enfin, à MJM j’ai réuni tout cela dans le Motion Design — en appliquant l’ensemble de mes acquis — et j’ai obtenu mon diplôme <span class='bold'>avec mention</span>."
+    },
     "whatido": {
       "title": "Ce que je fais",
       "item1": "Design de titres et typographies animées (génériques, interstitiels, habillages TV)",
@@ -43,11 +49,12 @@
       "p6": "La musique est mon <span class='bold'>métronome</span> : des orchestrations massives aux textures électroniques, elle dicte mes coupes et mes crescendos."
     },
     "working": {
-      "title": "Travailler avec moi",
-      "text": "Mes enseignants comme les entreprises avec lesquelles j’ai travaillé ont souligné mon <span class='bold'>adaptabilité</span>, mon <span class='bold'>professionnalisme</span> et ma <span class='bold'>motivation</span>. Je suis <span class='bold'>collaboratif</span> et <span class='bold'>direct</span> : si quelque chose est faible, je le dis — et je le corrige. Freelance / à distance, en anglais ou en français. Ouvert aux collaborations internationales et aux co-directions avec des studios."
+      "title": "Travailler avec&#8239;moi",
+      "text": "Mes enseignants comme les entreprises avec lesquelles j’ai travaillé ont souligné mon <span class='bold'>adaptabilité</span>, mon <span class='bold'>professionnalisme</span> et ma <span class='bold'>motivation</span>. Je travaille dans un esprit de <span class='bold'>clarté</span> et de <span class='bold'>collaboration</span> : identifier les points faibles est pour moi une étape naturelle vers un <span class='bold'>meilleur résultat</span>.",
+      "text2":"Je suis aussi ouvert à toute proposition susceptible d’<span class='bold'>améliorer le projet</span>, d’où qu’elle vienne. Freelance / à distance, en anglais ou en français. Ouvert aux collaborations internationales et aux co-directions avec des studios."
     },
     "citations": {
-      "title": "Temoignages",
+      "title": "Témoignages",
       "cit1": "<span class='italic'>« Florent s’est rapidement adapté à notre environnement spécifique et s’est montré efficace et <span class='bold'>motivé</span> au sein de l’équipe. »</span>",
       "a1": "France Sport",
       "cit2": "<span class='italic'>« Un étudiant avide d’apprendre et <span class='bold'>proactif</span> en cours, des qualités rares combinées à un vrai <span class='bold'>professionnalisme</span>. »</span>",
