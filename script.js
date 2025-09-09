@@ -220,25 +220,29 @@
   }
 })();
 
-// === Lightbox images ===
+// === Lightbox images (safe) ===
 document.addEventListener("DOMContentLoaded", () => {
-  const lb = document.getElementById("lightbox");
+  const lb    = document.getElementById("lightbox");
   const lbImg = document.getElementById("lightbox-img");
 
-  // toutes les images de tes carousels
-  document.querySelectorAll(".main-slider img, .thumb-slider img").forEach(img => {
-    img.addEventListener("click", () => {
-      lbImg.src = img.src;
-      lb.hidden = false;
-    });
-  });
+  // si la lightbox n'existe pas sur cette page, on sort
+  if (!lb || !lbImg) return;
 
-  // fermer en cliquant n'importe où
+  document
+    .querySelectorAll(".main-slider img, .thumb-slider img")
+    .forEach(img => {
+      img.addEventListener("click", () => {
+        lbImg.src = img.src;
+        lb.hidden = false;
+      });
+    });
+
   lb.addEventListener("click", () => {
     lb.hidden = true;
     lbImg.src = "";
   });
 });
+
 
 
 // === Fullscreen vidéos mobile ===

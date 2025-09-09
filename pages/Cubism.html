@@ -16,8 +16,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-<link rel="prefetch" href="partials/Menu_sidebar.html">
-<link rel="prefetch" href="partials/custom_scrollbar.html">
+    <link rel="prefetch" href="partials/Menu_sidebar.html" />
+    <link rel="prefetch" href="partials/custom_scrollbar.html" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Favicon standard -->
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
@@ -194,32 +194,9 @@
       });
     </script>
 
-    <!-- Menu Mobile-->
-    <script defer src="js/script-mobile.js"></script>
-    <script defer>
-      (async () => {
-        try {
-          const [sidebarHtml, scrollbarHtml] = await Promise.all([
-            fetch("partials/Menu_sidebar.html").then((r) => r.text()),
-            fetch("partials/custom_scrollbar.html").then((r) => r.text()),
-          ]);
-          document.getElementById("sidebar-placeholder").innerHTML =
-            sidebarHtml;
-          document.getElementById("scrollbar-placeholder").innerHTML =
-            scrollbarHtml;
-
-          // Rebranche le switch thème sur le NOUVEAU DOM
-          window.__theme?.syncThemeToggle();
-
-          // Init menu mobile
-          window.initMobileMenu?.();
-          window.initCustomScrollbar?.();
-        } catch (e) {
-          console.error("Partial injection failed:", e);
-        }
-      })();
-    </script>
-    <script defer src="js/menu_sidebar.js"></script>
+    <script src="./js/i18n.js" defer></script>
+    <script src="./js/script-mobile.js" defer></script>
+    <script src="./js/partials-loader.js" defer></script>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -30,16 +30,20 @@
       <!-- ton contenu principal -->
       <section id="home">
         <h1>Frap — Florent aupeix</h1>
-        <p data-i18n="index.lead">
-          Motion Designer & Title Designer
-        </p>
+        <p data-i18n="index.lead">Motion Designer & Title Designer</p>
         <br />
         <p data-i18n="index.p1">
-          I build moving images that are sharp and emotive. My eye is shaped as much by cinema as by design schools: Villeneuve’s precise compositions, Burton’s playful madness, Nolan’s sense of scale, and Tarantino’s razor-edged rhythm.
+          I build moving images that are sharp and emotive. My eye is shaped as
+          much by cinema as by design schools: Villeneuve’s precise
+          compositions, Burton’s playful madness, Nolan’s sense of scale, and
+          Tarantino’s razor-edged rhythm.
         </p>
 
         <p data-i18n="index.p2">
-          For me, motion design is about rhythm: shaping beats so the audience knows exactly what to feel and when. Every project starts with the same question: what should the audience feel—and what’s the most direct way to show it?
+          For me, motion design is about rhythm: shaping beats so the audience
+          knows exactly what to feel and when. Every project starts with the
+          same question: what should the audience feel—and what’s the most
+          direct way to show it?
         </p>
       </section>
 
@@ -89,7 +93,7 @@
               <img src="./assets/Cubism/VS--Cubism-0’00”.jpg" alt="" />
             </div>
           </a>
-          <a class=" no-underline grid5 card" href="pages/Cartoon_space.html">
+          <a class="no-underline grid5 card" href="pages/Cartoon_space.html">
             <div>
               <p data-i18n="index.Cartoon">Cartoon Space</p>
               <img src="./assets/Cartoon space/VS--Moon-0’04”.jpg" alt="" />
@@ -99,33 +103,9 @@
       </section>
     </div>
 
-    <script src="../js/i18n.js" defer></script>
-    <!-- Menu Mobile-->
-    <script defer src="js/script-mobile.js"></script>
-    <script defer>
-      (async () => {
-        try {
-          const [sidebarHtml, scrollbarHtml] = await Promise.all([
-            fetch("partials/Menu_sidebar.html").then((r) => r.text()),
-            fetch("partials/custom_scrollbar.html").then((r) => r.text()),
-          ]);
-          document.getElementById("sidebar-placeholder").innerHTML =
-            sidebarHtml;
-          document.getElementById("scrollbar-placeholder").innerHTML =
-            scrollbarHtml;
-
-          // Rebranche le switch thème sur le NOUVEAU DOM
-          window.__theme?.syncThemeToggle();
-
-          // Init menu mobile
-          window.initMobileMenu?.();
-          window.initCustomScrollbar?.();
-        } catch (e) {
-          console.error("Partial injection failed:", e);
-        }
-      })();
-    </script>
-
+    <script src="./js/i18n.js" defer></script>
+    <script src="./js/script-mobile.js" defer></script>
+    <script src="./js/partials-loader.js" defer></script>
     <script src="./script.js"></script>
   </body>
 </html>
