@@ -1,8 +1,8 @@
 {
   "index": {
     "lead": "<span class='italic'>Motion Designer</span> &amp; <span class='bold'>Title Designer</span>",
-    "p1": "I build moving images that are <span class='bold'>sharp</span> and <span class='italic'>emotive</span>. My eye is shaped as much by cinema as by design schools: Villeneuve’s precise <span class='bold'>composition</span>, Burton’s playful <span class='bold'>madness</span>, Nolan’s <span class='bold'>epic scale</span>, and Tarantino’s <span class='bold'>razor-edged rhythm</span>.",
-    "p2": "For me, motion design is about <span class='bold'>rhythm</span>: shaping beats so the audience knows exactly what to <span class='bold'>feel</span> and when. Every project starts with the same question: <span class='italic'>what should the audience feel—and what’s the most direct way to show it?</span>",
+    "p1": "I build moving images that are <span class='bold'>sharp</span> and <span class='italic'>emotive</span>. My eye is shaped as much by cinema as by design schools: Villeneuve's precise <span class='bold'>composition</span>, Burton's playful <span class='bold'>madness</span>, Nolan's <span class='bold'>epic scale</span>, and Tarantino's <span class='bold'>razor-edged rhythm</span>.",
+    "p2": "For me, motion design is about <span class='bold'>rhythm</span>: shaping beats so the audience knows exactly what to <span class='bold'>feel</span> and when. Every project starts with the same question: <span class='italic'>what should the audience feel—and what's the most direct way to show it?</span>",
     "Dune": "Dune Trailer",
     "Canette": "Elevate Can",
     "ElectroStim": "ElectroStim",
@@ -50,7 +50,7 @@
     "working": {
       "title": "Working with me",
       "text": "Those who worked with me — teachers, mentors, and companies — have praised my <span class='bold'>adaptability</span>, <span class='bold'>professionalism</span>, and <span class='bold'>motivation</span>. My approach is <span class='bold'>collaborative</span> and <span class='bold'>clear</span>: pointing out weaknesses is just a step toward making the work <span class='bold'>stronger</span>.",
-      "text2": "I’m also open to any suggestion that can <span class='bold'>improve the project</span>, whatever its source. Freelance and remote-friendly, in English or French. Open to international clients and co-direction with studios."
+      "text2": "I'm also open to any suggestion that can <span class='bold'>improve the project</span>, whatever its source. Freelance and remote-friendly, in English or French. Open to international clients and co-direction with studios."
     },
     "citations": {
       "title": "Testimonials",
@@ -62,7 +62,7 @@
       "a3": "Hagen Bauer"
     },
     "contact": {
-      "title": "Let’s make something sharp",
+      "title": "Let's make something sharp",
       "label": "Contact:",
       "pdf": "Portfolio 2D :"
     }

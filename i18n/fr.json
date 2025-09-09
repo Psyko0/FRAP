@@ -1,8 +1,8 @@
 {
   "index": {
     "lead": "<span class='italic'>Motion Designer</span> &amp; <span class='bold'>Title Designer</span>",
-    "p1": "Je crée des images en mouvement <span class='bold'>précises</span> et <span class='italic'>émotives</span>. Mon regard est autant façonné par le cinéma que par mes écoles de design : la <span class='bold'>composition</span> rigoureuse de Villeneuve, la <span class='bold'>folie</span> visuelle de Burton, l’<span class='bold'>ampleur épique</span> de Nolan, et le <span class='bold'>rythme tranchant</span> de Tarantino.",
-    "p2": "Pour moi, le motion design est une question de <span class='bold'>rythme</span> : sculpter les temps forts pour que le public sache exactement ce qu’il doit <span class='bold'>ressentir</span> et quand. Chaque projet commence avec la même question : <span class='italic'>que doit éprouver le spectateur — et quelle est la manière la plus directe de le montrer ?</span>",
+    "p1": "Je crée des images en mouvement <span class='bold'>précises</span> et <span class='italic'>émotives</span>. Mon regard est autant façonné par le cinéma que par mes écoles de design : la <span class='bold'>composition</span> rigoureuse de Villeneuve, la <span class='bold'>folie</span> visuelle de Burton, l'<span class='bold'>ampleur épique</span> de Nolan, et le <span class='bold'>rythme tranchant</span> de Tarantino.",
+    "p2": "Pour moi, le motion design est une question de <span class='bold'>rythme</span> : sculpter les temps forts pour que le public sache exactement ce qu'il doit <span class='bold'>ressentir</span> et quand. Chaque projet commence avec la même question : <span class='italic'>que doit éprouver le spectateur — et quelle est la manière la plus directe de le montrer ?</span>",
     "Dune": "Bande-annonce Dune",
     "Canette": "Canette Elevate",
     "ElectroStim": "Electro Stimulation",
@@ -14,16 +14,16 @@
     "lead": "<span class='bold'>Motion Designer</span> &amp; <span class='bold'>Title Designer</span>. Je conçois des séquences <span class='bold'>claires</span> et <span class='bold'>émotives</span> pour le cinéma, les séries, le jeu vidéo et les marques.",
     "background": {
       "title": "Parcours",
-      "bio1": "À l'ESDAC j’ai acquis de solides bases en design graphique, en travaillant surtout la <span class='bold'>couleur</span> et le <span class='bold'>dessin d’observation</span>, grâce à d’excellents professeurs. Mon année en alternance chez France Sport m’a appris à m’adapter rapidement à un environnement professionnel et à être <span class='bold'>efficace</span> dans une équipe en mouvement.",
-      "bio2": "À ArtFx j’ai affûté mon regard à travers la photo, la sculpture, la peinture, le dessin et le cinéma/VFX. Les nombreux projets de groupe m’ont appris à garder des workflows <span class='bold'>clairs</span>, <span class='bold'>lisibles</span> et <span class='bold'>transmissibles</span>.",
-      "bio3": "À Objectif3D j’ai approfondi mes compétences en 3D et étudié la <span class='bold'>sémiologie</span>, c’est-à-dire comment les images, les symboles et la composition guident le sens.",
-      "bio4": "J’ai également fait deux ans d’informatique, qui m’ont donné une forte <span class='bold'>logique</span> et une vraie <span class='bold'>rigueur</span> dans la structuration des projets.",
-      "bio5": "Enfin, à MJM j’ai réuni tout cela dans le Motion Design — en appliquant l’ensemble de mes acquis — et j’ai obtenu mon diplôme <span class='bold'>avec mention</span>."
+      "bio1": "À l'ESDAC j'ai acquis de solides bases en design graphique, en travaillant surtout la <span class='bold'>couleur</span> et le <span class='bold'>dessin d'observation</span>, grâce à d'excellents professeurs. Mon année en alternance chez France Sport m'a appris à m'adapter rapidement à un environnement professionnel et à être <span class='bold'>efficace</span> dans une équipe en mouvement.",
+      "bio2": "À ArtFx j'ai affûté mon regard à travers la photo, la sculpture, la peinture, le dessin et le cinéma/VFX. Les nombreux projets de groupe m'ont appris à garder des workflows <span class='bold'>clairs</span>, <span class='bold'>lisibles</span> et <span class='bold'>transmissibles</span>.",
+      "bio3": "À Objectif3D j'ai approfondi mes compétences en 3D et étudié la <span class='bold'>sémiologie</span>, c'est-à-dire comment les images, les symboles et la composition guident le sens.",
+      "bio4": "J'ai également fait deux ans d'informatique, qui m'ont donné une forte <span class='bold'>logique</span> et une vraie <span class='bold'>rigueur</span> dans la structuration des projets.",
+      "bio5": "Enfin, à MJM j'ai réuni tout cela dans le Motion Design — en appliquant l'ensemble de mes acquis — et j'ai obtenu mon diplôme <span class='bold'>avec mention</span>."
     },
     "whatido": {
       "title": "Ce que je fais",
       "item1": "Design de titres et typographies animées (génériques, interstitiels, habillages TV)",
-      "item2": "Séquences graphiques et spots 3D (du styleframe à l’animatique, jusqu’au rendu final)",
+      "item2": "Séquences graphiques et spots 3D (du styleframe à l'animatique, jusqu'au rendu final)",
       "item3": "Workflows hybrides (Cinema 4D/Redshift ↔ After Effects), <span class='bold'>propres</span> et <span class='bold'>maîtrisés</span>",
       "item4": "Clarté éditoriale : modeler le rythme pour que le spectateur sache toujours quoi <span class='bold'>ressentir</span>"
     },
@@ -37,27 +37,27 @@
     },
     "tools": {
       "title": "Outils",
-      "text": "Cinema 4D + Redshift, After Effects, Photoshop, Illustrator, X-Particles si nécessaire. Gestion par Git pour les assets, préférence pour l’<span class='bold'>automatisation</span> plutôt que le bricolage manuel."
+      "text": "Cinema 4D + Redshift, After Effects, Photoshop, Illustrator, X-Particles si nécessaire. Gestion par Git pour les assets, préférence pour l'<span class='bold'>automatisation</span> plutôt que le bricolage manuel."
     },
     "influence": {
       "title": "Influences",
-      "p1": "Le cinéma est mon plus grand maître. Denis Villeneuve m’inspire par son <span class='bold'>rythme</span>, son <span class='bold'>storytelling</span> et ses <span class='bold'>compositions</span>. <span class='italic'>Dune 2</span> a été une telle référence que j’en ai fait un projet durant mes études. <span class='italic'>Blade Runner 2049</span> nourrit mon amour du cyberpunk, avec une image <span class='bold'>léchée</span> et une histoire rythmée comme une partition.",
-      "p2": "Tim Burton a forgé mon goût pour la <span class='bold'>folie visuelle</span>. <span class='italic'>Beetlejuice</span> (1 et 2), avec son mélange d’animatronics et de stop motion, et <span class='italic'>Alice au pays des merveilles</span> montrent sa joie de créer. Mais il sait aussi émouvoir, comme avec <span class='italic'>Edward aux mains d’argent</span>.",
-      "p3": "Christopher Nolan est ma référence pour l’<span class='bold'>épique</span> et la <span class='bold'>tension</span>. <span class='italic'>Dunkerque</span> est mon favori : le design sonore et le rythme implacable plongent le spectateur dans l’horreur de la guerre. Avec <span class='italic'>The Dark Knight</span>, il combine suspense, tension et humour — le Joker reste inoubliable.",
-      "p4": "Quentin Tarantino est l’incontestable maître du <span class='bold'>carnage absurde</span>. <span class='italic'>Pulp Fiction</span>, <span class='italic'>Kill Bill</span>, <span class='italic'>Inglourious Basterds</span>, <span class='italic'>Once Upon a Time in Hollywood</span> — chacun révèle son talent pour le <span class='bold'>rythme</span>, les dialogues et la violence transformée en spectacle.",
-      "p5": "Les jeux vidéo m’ont autant appris que le cinéma. <span class='italic'>Cyberpunk 2077</span> pour son <span class='bold'>storytelling</span> et son <span class='bold'>rythme</span>, <span class='italic'>Journey</span> pour sa <span class='bold'>composition visuelle</span> et sa pureté, et <span class='italic'>Gris</span> pour sa <span class='bold'>couleur</span>, son <span class='bold'>rythme</span>, son <span class='bold'>immersion</span> et son récit délicat. <span class='italic'>Cyberpunk 2077</span> et <span class='italic'>Gris</span> m’ont même fait pleurer — preuve que lorsque rythme, image et narration s’alignent parfaitement, le mouvement touche directement à l’émotion.",
+      "p1": "Le cinéma est mon plus grand maître. Denis Villeneuve m'inspire par son <span class='bold'>rythme</span>, son <span class='bold'>storytelling</span> et ses <span class='bold'>compositions</span>. <span class='italic'>Dune 2</span> a été une telle référence que j'en ai fait un projet durant mes études. <span class='italic'>Blade Runner 2049</span> nourrit mon amour du cyberpunk, avec une image <span class='bold'>léchée</span> et une histoire rythmée comme une partition.",
+      "p2": "Tim Burton a forgé mon goût pour la <span class='bold'>folie visuelle</span>. <span class='italic'>Beetlejuice</span> (1 et 2), avec son mélange d'animatronics et de stop motion, et <span class='italic'>Alice au pays des merveilles</span> montrent sa joie de créer. Mais il sait aussi émouvoir, comme avec <span class='italic'>Edward aux mains d'argent</span>.",
+      "p3": "Christopher Nolan est ma référence pour l'<span class='bold'>épique</span> et la <span class='bold'>tension</span>. <span class='italic'>Dunkerque</span> est mon favori : le design sonore et le rythme implacable plongent le spectateur dans l'horreur de la guerre. Avec <span class='italic'>The Dark Knight</span>, il combine suspense, tension et humour — le Joker reste inoubliable.",
+      "p4": "Quentin Tarantino est l'incontestable maître du <span class='bold'>carnage absurde</span>. <span class='italic'>Pulp Fiction</span>, <span class='italic'>Kill Bill</span>, <span class='italic'>Inglourious Basterds</span>, <span class='italic'>Once Upon a Time in Hollywood</span> — chacun révèle son talent pour le <span class='bold'>rythme</span>, les dialogues et la violence transformée en spectacle.",
+      "p5": "Les jeux vidéo m'ont autant appris que le cinéma. <span class='italic'>Cyberpunk 2077</span> pour son <span class='bold'>storytelling</span> et son <span class='bold'>rythme</span>, <span class='italic'>Journey</span> pour sa <span class='bold'>composition visuelle</span> et sa pureté, et <span class='italic'>Gris</span> pour sa <span class='bold'>couleur</span>, son <span class='bold'>rythme</span>, son <span class='bold'>immersion</span> et son récit délicat. <span class='italic'>Cyberpunk 2077</span> et <span class='italic'>Gris</span> m'ont même fait pleurer — preuve que lorsque rythme, image et narration s'alignent parfaitement, le mouvement touche directement à l'émotion.",
       "p6": "La musique est mon <span class='bold'>métronome</span> : des orchestrations massives aux textures électroniques, elle dicte mes coupes et mes crescendos."
     },
     "working": {
       "title": "Travailler avec&#8239;moi",
-      "text": "Mes enseignants comme les entreprises avec lesquelles j’ai travaillé ont souligné mon <span class='bold'>adaptabilité</span>, mon <span class='bold'>professionnalisme</span> et ma <span class='bold'>motivation</span>. Je travaille dans un esprit de <span class='bold'>clarté</span> et de <span class='bold'>collaboration</span> : identifier les points faibles est pour moi une étape naturelle vers un <span class='bold'>meilleur résultat</span>.",
-      "text2":"Je suis aussi ouvert à toute proposition susceptible d’<span class='bold'>améliorer le projet</span>, d’où qu’elle vienne. Freelance / à distance, en anglais ou en français. Ouvert aux collaborations internationales et aux co-directions avec des studios."
+      "text": "Mes enseignants comme les entreprises avec lesquelles j'ai travaillé ont souligné mon <span class='bold'>adaptabilité</span>, mon <span class='bold'>professionnalisme</span> et ma <span class='bold'>motivation</span>. Je travaille dans un esprit de <span class='bold'>clarté</span> et de <span class='bold'>collaboration</span> : identifier les points faibles est pour moi une étape naturelle vers un <span class='bold'>meilleur résultat</span>.",
+      "text2":"Je suis aussi ouvert à toute proposition susceptible d'<span class='bold'>améliorer le projet</span>, d'où qu'elle vienne. Freelance / à distance, en anglais ou en français. Ouvert aux collaborations internationales et aux co-directions avec des studios."
     },
     "citations": {
       "title": "Témoignages",
-      "cit1": "<span class='italic'>« Florent s’est rapidement adapté à notre environnement spécifique et s’est montré efficace et <span class='bold'>motivé</span> au sein de l’équipe. »</span>",
+      "cit1": "<span class='italic'>« Florent s'est rapidement adapté à notre environnement spécifique et s'est montré efficace et <span class='bold'>motivé</span> au sein de l'équipe. »</span>",
       "a1": "France Sport",
-      "cit2": "<span class='italic'>« Un étudiant avide d’apprendre et <span class='bold'>proactif</span> en cours, des qualités rares combinées à un vrai <span class='bold'>professionnalisme</span>. »</span>",
+      "cit2": "<span class='italic'>« Un étudiant avide d'apprendre et <span class='bold'>proactif</span> en cours, des qualités rares combinées à un vrai <span class='bold'>professionnalisme</span>. »</span>",
       "a2": "Andrés Barriga, professeur de Motion Design, ESDAC",
       "cit3": "<span class='italic'>« <span class='bold'>Motivé</span>, ponctuel et <span class='bold'>fiable</span>, Florent a dépassé les missions demandées et a apporté une réelle <span class='bold'>valeur</span> à nos projets. »</span>",
       "a3": "Hagen Bauer"
