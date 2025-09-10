@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWBMGXC8RH"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RWBMGXC8RH');
+</script>
     <title>Portfolio</title>
     <base href="./" />
     <link rel="stylesheet" href="./styles.css" />
@@ -107,5 +118,24 @@
     <script src="./js/script-mobile.js" defer></script>
     <script src="./js/partials-loader.js" defer></script>
     <script src="./script.js"></script>
+
+<!-- LiveReload (dev seulement) -->
+<script>
+if (['127.0.0.1','localhost'].includes(location.hostname)) {
+  (function tryCombos(hosts, ports, i=0, j=0){
+    if (i >= hosts.length) return;
+    var s = document.createElement('script');
+    s.src = 'http://' + hosts[i] + ':' + ports[j] + '/livereload.js?snipver=1';
+    s.onload = function(){ console.log('LiveReload ok ->', s.src); };
+    s.onerror = function(){
+      s.remove();
+      j++; if (j >= ports.length) { j = 0; i++; }
+      tryCombos(hosts, ports, i, j);
+    };
+    document.body.appendChild(s);
+  })(['localhost','127.0.0.1','[::1]'], [35729,35730,35731]);
+}
+</script>
+
   </body>
 </html>
