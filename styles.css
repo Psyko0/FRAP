@@ -45,12 +45,6 @@ p,
 li {
   hyphens: auto;
 }
-@media print {
-  p {
-    orphans: 3;
-    widows: 3;
-  } /* minimum 3 lignes en haut/bas d’une page */
-}
 
 h1 {
   text-transform: uppercase;
@@ -113,29 +107,34 @@ ol {
   flex-direction: column;
   justify-content: space-between;
 }
-.page h2{
+.page h2 {
   margin-top: auto;
 }
-.centerh{
+.centerv {
   justify-content: center;
 }
-.icon{
+.centerh {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
   width: 2rem;
   height: 2rem;
   color: var(--text-dark);
   vertical-align: middle;
 }
-.mb5{
+.mb5 {
   margin-bottom: 5vh;
 }
-.mt1{
+.mt1 {
   margin-top: 1vh;
 }
-.fillhover .icon{
+.fillhover .icon {
   stroke: currentColor;
   transition: fill 0.25s ease, stroke 0.25s ease, color 0.25s ease;
 }
-.fillhover:hover .icon{
+.fillhover:hover .icon {
   color: var(--accent-color-dark);
   stroke: var(--accent-color-dark);
   fill: var(--accent-color-dark);
@@ -215,11 +214,6 @@ body::-webkit-scrollbar {
   position: absolute;
   inset: -6px; /* hitbox +6px de chaque côté */
 }
-@media (max-width: 639px) {
-  #custom-scrollbar {
-    display: none;
-  } /* optionnel: pas de barre custom sur mobile */
-}
 
 /* Appliquer les variables de la palette DARK partout */
 body {
@@ -280,6 +274,7 @@ input:checked + .slider::before {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
+  justify-content: space-between;
 }
 
 .sidebar ul {
@@ -287,7 +282,7 @@ input:checked + .slider::before {
   padding: 0;
   margin: 0;
 }
-.reseaux{
+.reseaux {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -352,6 +347,11 @@ input:checked + .slider::before {
   color: var(--bg-dark-1); /* active text */
   border-color: var(--bg-dark-1);
 }
+.Menu_category {
+  font-family: "Parisienne", cursive;
+  text-transform: none;
+  font-size: var(--fs-h2);
+}
 
 .menu_page.active,
 .about.active,
@@ -366,14 +366,6 @@ input:checked + .slider::before {
   padding: 2rem;
 }
 /* ===== Sidebar (desktop visible, mobile cachée) ===== */
-@media (max-width: 639px) {
-  .sidebar {
-    display: none;
-  }
-  .content {
-    margin-left: 0;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -405,11 +397,6 @@ input:checked + .slider::before {
   line-height: 0;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
-}
-@media (max-width: 639px) {
-  .burger {
-    display: flex;
-  }
 }
 
 .burger-line {
@@ -571,11 +558,6 @@ input:checked + .slider::before {
   display: none;
 }
 
-@media (min-width: 640px) {
-  .tap-catcher {
-    display: none;
-  }
-}
 /*=== gallerie === */
 .gallery {
   margin-top: 2vh;
@@ -619,6 +601,8 @@ input:checked + .slider::before {
   transition: color 0.3s;
   width: 100%;
   background-color: var(--bg-dark-1);
+  border-radius: 3px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.06));
 }
 
 .wrapper img {
@@ -673,27 +657,6 @@ input:checked + .slider::before {
 .grid5 {
   grid-column: 1/3;
   grid-row: 3;
-}
-
-@media (max-width: 639px) {
-  .wrapper {
-    grid-template-columns: 1fr; /* une seule colonne */
-    grid-auto-rows: auto;
-  }
-  .grid1 {
-    aspect-ratio: 16/9;
-    background: #000;
-  }
-
-  /* Réinitialiser les spans de colonnes/rows */
-  .grid1,
-  .grid2,
-  .grid3,
-  .grid4,
-  .grid5 {
-    grid-column: auto;
-    grid-row: auto;
-  }
 }
 
 /* === carousel paysage === */
@@ -759,56 +722,8 @@ input:checked + .slider::before {
   color: var(--text-dark-2);
 }
 
-/* === carousel paysage mobile ===*/
-/* Mobile: on neutralise Swiper pour la galerie principale */
-@media (max-width: 639px) {
-  .thumb-slider {
-    display: none;
-  } /* on vire les miniatures */
-
-  .main-slider {
-    height: auto !important;
-    overflow: visible !important;
-  }
-  .main-slider .swiper-wrapper {
-    display: block !important; /* plus de flex/transform Swiper */
-    transform: none !important;
-  }
-  .main-slider .swiper-slide {
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 0 16px 0; /* espace entre images */
-  }
-  .main-slider img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 639px) {
-  .thumb-slider {
-    display: none !important;
-  }
-  /* si un wrapper autour crée un espace : */
-  .thumb-slider,
-  .thumb-slider * {
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-
 /* Desktop par défaut: Swiper garde la main */
-@media (min-width: 640px) {
-  .main-slider {
-    height: 100%;
-  }
-  .main-slider img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -916,30 +831,6 @@ input:checked + .slider::before {
   flex-wrap: wrap; /* passe en ligne suivante si ça ne tient pas */
 }
 
-/* Mobile: thumbs sous l'image si tu veux */
-@media (max-width: 639px) {
-  .portrait-gallery {
-    --maxH: 65vh;
-  }
-  .portrait-grid {
-    grid-template-columns: 1fr;
-  }
-  .main-box {
-    width: min(100%, calc(var(--maxH) * var(--ratio)));
-  }
-  .thumb-slider-vert {
-    height: auto;
-    width: 100%;
-    margin-top: 10px;
-  }
-  .thumb-slider-vert .swiper-slide {
-    height: 80px;
-  }
-  .topbar {
-    display: none;
-  }
-}
-
 /*=== projet === */
 
 .Video {
@@ -963,7 +854,10 @@ input:checked + .slider::before {
   justify-content: space-between;
 }
 .col1 {
-  width: 49%;
+  flex: 1;
+}
+.col1 img {
+  width: 100%;
 }
 .citations {
   justify-self: center;
@@ -1006,22 +900,7 @@ input:checked + .slider::before {
   margin-bottom: 0;
   margin-top: 5vh;
 }
-@media (max-width: 639px) {
-  .col2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .col1 {
-    width: auto;
-  }
-  .col3 {
-    display: flex;
-    flex-direction: column;
-  }
-  .col3 .tem1 {
-    margin-bottom: 4rem;
-  }
-}
+
 /* Vars (tu peux brancher sur tes couleurs) */
 :root {
   --link-underline-color: var(--accent-color-dark);
@@ -1072,4 +951,511 @@ a:focus-visible {
 a.no-underline {
   background-image: none !important;
   text-decoration: none !important;
+}
+.grid {
+  display: grid;
+  gap: 1.5vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.case {
+  aspect-ratio: 16/9;
+  height: 100%;
+  overflow: hidden;
+}
+.case img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
+}
+
+#equilogo {
+  width: 75%;
+}
+.col--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--- PALETTE ---*/
+
+.palette-matrix {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  --row-h: 56px;
+  --left: 220px; /* largeur colonne gauche */
+  display: grid;
+  grid-template-columns: var(--left) 1fr;
+  align-items: center;
+  gap: 1.25rem;
+}
+.swatch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  height: var(--row-h);
+}
+.swatch .hex {
+  line-height: 1; /* important */
+  display: flex;
+  align-items: center; /* centre verticalement */
+}
+.bold {
+  font-weight: 700;
+}
+.chip {
+  inline-size: var(--row-h); /* = width */
+  block-size: var(--row-h); /* = height */
+  background: var(--c);
+}
+.preview {
+  block-size: var(--row-h); /* = height */
+  inline-size: 100%;
+  overflow: hidden;
+
+  background-image: linear-gradient(
+    90deg,
+    rgb(from var(--c) r g b / 1) 0% 16.66%,
+    rgb(from var(--c) r g b / 0.8) 16.66% 33.33%,
+    rgb(from var(--c) r g b / 0.6) 33.33% 50%,
+    rgb(from var(--c) r g b / 0.4) 50% 66.66%,
+    rgb(from var(--c) r g b / 0.2) 66.66% 83.33%,
+    rgb(from var(--c) r g b / 0) 83.33% 100%
+  );
+  background-color: transparent; /* ou #111 si tu veux un fond constant */
+}
+
+/* TYPO */
+
+/* ===== Typo (déclare juste les familles, import où tu veux) ===== */
+.uni {
+  font-family: "Uni Sans Heavy CAPS", "Uni Sans", system-ui, sans-serif;
+  font-weight: 800;
+}
+.body,
+.caption,
+.meta,
+.specimen p {
+  font-family: "Noto Sans KR", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Layout ===== */
+.type-preview {
+  --gap: 1.25rem;
+  --label-w: 10vw;
+  display: grid;
+  grid-auto-rows: auto;
+  gap: var(--gap);
+}
+.type-preview .row {
+  display: grid;
+  grid-template-columns: var(--label-w) 1fr;
+  gap: var(--gap);
+  align-items: start;
+}
+.type-preview .col.label {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+}
+
+/* ===== Échelles ===== */
+h1.uni {
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 0.94;
+  letter-spacing: 0.02em;
+}
+h2.uni {
+  font-size: clamp(24px, 3.6vw, 36px);
+  line-height: 1;
+  letter-spacing: 0.015em;
+}
+h3.uni {
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.body {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 70ch;
+}
+.caption {
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.9;
+}
+.meta {
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.6;
+}
+
+.specimen p:first-child {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+.specimen p:last-child {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.85;
+}
+
+/* ===== Utilitaires existants ===== */
+.bold {
+  font-weight: 700;
+}
+.italic {
+  font-style: italic;
+}
+
+/* ===== Grid reutilisable ===== */
+.assets-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.asset {
+  width: 100%;
+  border-radius: 3px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.06));
+  overflow: hidden;
+}
+.assets-grid figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.asset img,
+.asset video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.conclusion {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.staff-intro {
+  margin-top: 25vh;
+}
+
+.personna img {
+  width: 100%;
+}
+
+.targets {
+  /* supprime width:50% */
+  flex: 1 1 0; /* ← colonne gauche plus large */
+  min-height: 40vw; /* hauteur immersive liée à la largeur viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.targets h2 {
+  margin-top: 0;
+}
+section.personna {
+  flex: 1 1 0; /* ← colonne droite plus étroite */
+}
+
+/* Grille interne des 3 personas */
+.rowtop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+article.personna img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Responsive */
+
+.refs-assets {
+  display: flex;
+  align-items: flex-start;
+}
+
+.search figure {
+  background-color: white;
+}
+
+.reveal-text summary {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-color-dark);
+  border-radius: 8px;
+  padding: .5em 1em;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  list-style: none;
+  transition: background .3s ease;
+}
+.reveal-text summary::-webkit-details-marker {
+  display: none;
+}
+.typo-overview .col1{
+  flex: initial;
+}
+.typo-overview{
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: space-evenly;
+}
+/* =========================================================
+   MEDIA QUERIES — Regroupées proprement (coller en bas)
+   ========================================================= */
+/* ===== Feature queries gardées telles quelles ===== */
+@media print {
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ===== 1) Mobile ≤640px ===== */
+@media (max-width: 640px) {
+  /* …(toutes tes règles ≤600/639/640px regroupées ici)… */
+  /* ex: */
+  :root{
+    --fs:1rem;
+  }
+  .item {
+    --row-h: 40px;
+  }
+
+  #custom-scrollbar {
+    display: none;
+  } /* optionnel: pas de barre custom sur mobile */
+
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .burger {
+    display: flex;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .grid1 {
+    aspect-ratio: 16/9;
+    background: #000;
+  }
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  /* Carrousel paysage : neutra mobile */
+  .thumb-slider {
+    display: none !important;
+  }
+  .thumb-slider,
+  .thumb-slider * {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .main-slider {
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .main-slider .swiper-wrapper {
+    display: block !important;
+    transform: none !important;
+  }
+  .main-slider .swiper-slide {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0 16px 0;
+  }
+  .main-slider img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Carrousel portrait : adaptation mobile */
+  .portrait-gallery {
+    --maxH: 65vh;
+  }
+  .portrait-grid {
+    grid-template-columns: 1fr;
+  }
+  .main-box {
+    width: min(100%, calc(var(--maxH) * var(--ratio)));
+  }
+  .thumb-slider-vert {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .thumb-slider-vert .swiper-slide {
+    height: 80px;
+  }
+  .topbar {
+    display: none;
+  }
+
+  /* Layouts About / Footer */
+  .col2 {
+    flex-direction: column;
+  }
+  .col1 {
+    width: auto;
+  }
+  .col3 {
+    flex-direction: column;
+  }
+  .col3 .tem1 {
+    margin-bottom: 4rem;
+  }
+
+  /* Grilles génériques → 1 colonne */
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Assets en 1 colonne à ce palier */
+  .assets-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== 2) Tablette/Laptop 641–1024px ===== */
+@media (641px <= width <= 1024px) {
+  :root{
+    --fs:1.125rem;
+  }
+  /* …(regroupement de tes règles à 860/900/1024px)… */
+  /* ex: */
+  .item {
+    --row-h: 23px;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+  } /* layout palette/type sur 1 col */
+  .preview {
+    aspect-ratio: 4 / 3;
+  }
+  .type-preview .row {
+    grid-template-columns: 1fr;
+  }
+  .type-preview .col.label {
+    opacity: 0.65;
+  }
+
+  /* Assets → 2 colonnes en tablette */
+  .assets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* + règles “desktop ≥640px” qui doivent aussi s’appliquer ici */
+  .tap-catcher {
+    display: none;
+  }
+  .main-slider {
+    height: 100%;
+  }
+  .main-slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .page-equinoxe .row{
+    flex-direction: column;
+  }
+  #equilogo{width: 35%; display: block;}
+  .page-equinoxe .col--img{
+    align-items: flex-start;
+  }
+  .colorpalette{
+    margin-bottom: 25vh;
+  }
+  .palette-matrix{width: 60vw;}
+  .item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reveal-text-2{display: none;}
+
+
+}
+
+/* ===== 3) Large ≥1200px ===== */
+@media (min-width: 1200px) {
+  /* Règles grand écran + celles prévues “≥640px” qui valent aussi pour ≥1200 */
+  .tap-catcher {
+    display: none;
+  }
+  .main-slider {
+    height: 100%;
+  }
+  .main-slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .reveal-text {
+    display: none;
+  }
+
+  /* Ex: tes ajustements de texte/images si tu veux raffiner ici */
+  /* :root { --fs: 1.25rem; }  ← garde ton 20px si besoin */
 }
